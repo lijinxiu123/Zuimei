@@ -1,0 +1,236 @@
+body{
+	background: #F6F6F4;
+}
+
+/*header*/
+#site-header{
+	width: 100%;
+	height: 50px;
+	background-color: #303030;
+}
+.container{
+	width: 980px;
+	height: 35px;
+	margin-left:auto;
+	margin-right: auto;
+	padding-top: 8px;
+}
+.logo{
+	display: block;
+	width: 136px;
+	height: 35px;
+	margin: auto;
+	float: left;
+	vertical-align: middle;
+}
+.site-address{
+	float: left;
+	padding-top: 18px;
+	padding-left: 5px;
+}
+nav{
+	float: left;
+	width: 200px;
+	margin-left: 30px;
+	margin-top: -8px;
+}
+.nav-item{
+	float:left;
+	color: white;
+	padding:15px 20px 14px;
+	font-size: 16px;
+}
+.active-nav-item{
+	background-color: #525252;
+}
+.account{
+	float: left;
+	display: none;
+}
+.account-manage{
+	margin-left: 100px;
+	margin-right: 20px;
+}
+.manage-list{
+	position: absolute;
+	top:60px;
+	left: 700px;
+	
+}
+
+
+.triangle-up{
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: 8px solid rgba(0, 0, 0, 0);
+	border-right:8px solid rgba(0, 0, 0, 0);
+	border-bottom: 8px solid #333;
+	border-left: 8px solid rgba(0, 0, 0, 0);
+	border-style: solid;
+	position: absolute;
+	left: 50px;
+	top:-15px;
+}
+.triangle-down{
+	display: block;
+	height: 0;
+	width: 0;
+	border-top: 8px solid #7C7C7C;
+	border-right: 8px solid rgba(0, 0, 0, 0);
+	border-bottom: 8px solid rgba(0, 0, 0, 0);
+	border-left: 8px solid rgba(0, 0, 0, 0);
+	border-style: solid;
+}
+.manage-list ul{
+	background-color: #333;
+	padding:5px 0;
+}
+.manage-list ul li{
+	padding:10px 25px;
+}
+#new-article{
+	background:url('../img/dropdownlist_add_normal.png');
+}
+#article-manage{
+	background:url('../img/dropdownlist_articlemanage_normal.png');
+}
+#user-manage{
+	background:url('../img/dropdownlist_usermanage_normal.png');
+}
+#logout{
+	background:url('../img/dropdownlist_logout_normal.png');
+}
+#new-article,
+#article-manage,
+#user-manage,
+#logout{
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	padding: 2px 0 5px 28px;
+}
+form.search{
+	float: left;
+}
+input[type="search"]{
+	background-color: #363636;
+}
+/*body*/
+.left-side{
+	width: 700px;
+	margin-right: 10px;
+	float: left;
+}
+.right-side{
+	width: 270px;
+	float: left;
+}
+.content-card,
+.side-card{
+  /*border:1px solid #e9e9e9;*/
+  display: block;
+  background-color: white;
+  margin-bottom: 10px; 
+  overflow: hidden;
+}
+/*内容卡*/
+.content-card{
+  padding: 25px;
+}
+
+/*tag*/
+.tag1,.tag2{
+	float: left;
+	overflow: hidden;
+	width: 100%;
+}
+.tag1 a{
+	float: left;
+	padding:3px 55px 3px 0;
+}
+.tag1 a.last{
+	padding-right: 25px;
+}
+.tag1 li{
+	float: left;
+}
+.tag1 li:last-child{
+	padding-top: 10px;
+	cursor: pointer;
+}
+.active-tag{
+	color: #ffb400;
+}
+#tag2{
+	display: none;
+}
+/*文章*/
+.article-title{
+	overflow: hidden;
+	vertical-align: middle;
+	margin-bottom: 20px;
+}
+h1{
+	float: left;
+}
+.app-icon{
+	float: left;
+	margin-right: 20px;
+}
+.app-icon img{
+	width:60px;
+	height: 60px;
+	border-radius: 12px;
+}
+.article-img img{
+	max-width: 20%;
+	float: left;
+	margin-right: 10px;
+}
+.qr{
+	float: left;
+	width: 50px;
+}
+.download-apple{
+	background-color: #8a8a8a;
+	border-radius: 8px;
+	width: 50px;
+	height: 30px;
+}
+
+
+
+
+
+
+
+/*右侧卡*/
+.side-card{
+  padding: 10px;
+}
+/*热门图片*/
+img.hot{
+  margin: 20px 0;
+}
+
+/*改变位置*/
+.text-top{
+  padding-top: 10px;
+}
+.text-bottom{
+  padding-bottom: 10px;
+}
+.text-left{
+  padding-left: 5px;
+}
+.text-right{
+  padding-right: 5px;
+}
+.auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+

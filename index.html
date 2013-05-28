@@ -3,28 +3,118 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>最美应用</title>
+<title>最美应用-用户登陆</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link rel="icon" href="favicon.ico" type="image/-icon" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<link href="normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
 <link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body>
-	<header>
-		
+	<header id="site-header">
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="img/titlebar_logo.png" alt="">
+			</a>
+			<a class="site-address">ZuimeiA.com</a>
+			<nav>
+				<ul id="nav">
+					<li><a href="#" class="nav-item active-nav-item">iPhone</a></li>
+					<li><a href="#" class="nav-item">Android</a></li>
+				</ul>
+			</nav>
 
-
-
-
-
+			<div class="account">
+				<a href="#" class="account-manage">
+					<img src="img/titlebar_personal_normal.png" alt="">
+				</a>
+					<div class="manage-list">
+						<span class="triangle-up"></span>
+						<ul>
+							<li><a href="" id="new-article">发表新文章</a></li>
+							<li><a href="" id="article-manage">文章管理</a></li>
+							<li><a href="" id="user-manage">用户管理</a></li>
+							<li><a href="" id="logout">退出登录</a></li>
+						</ul>
+					</div>
+			</div>
+			<form action="" class="search">
+				<input type="search" value="搜索最美应用">
+			</form>
+		</div>
 	</header>
 
+	<div class="container">
+	<div class="left-side">
 
+		<div class="content-card">
+			<ul class="tag1" id="tag1">
+				<li><a href="#" class="acitve-tag">全部</a></li>
+				<li><a href="#">教育</a></li>
+				<li><a href="#">图书</a></li>
+				<li><a href="#">工具</a></li>
+				<li><a href="#">效率</a></li>
+				<li><a href="#">艺术</a></li>
+				<li><a href="#">儿童</a></li>
+				<li><a href="#" class="last">视频</a></li>
+				<li><span class="triangle-down"></span></li>
+			</ul>
 
+			<ul class="tag2" id="tag2">
+				<li><a href="#">财务</a></li>
+				<li><a href="#">参考</a></li>
+				<li><a href="#">导航</a></li>
+				<li><a href="#">娱乐</a></li>
+				<li><a href="#">商业</a></li>
+				<li><a href="#">报刊杂志</a></li>
+				<li><a href="#">健康健美</a></li>
+				<li><a href="#">摄影与录像</a></li>
+			</ul>
+		</div>
+		<article>
+			<section>
+				<a class="content-card">
+					<div class="article-title">
+						<div class="app-icon">
+							<img src="img/app-icon/icon-rise.jpg" alt="">
+						</div>
+						<h1>Rise Alarm Clock-极简风格的闹钟</h1>
 
+					</div>
+					
+					<p>这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间……</p>
+					<div class="article-img">
+						<img src="img/app-img/rise.jpg" alt="">
+						<img src="img/app-img/rise2.jpg" alt="">
+						<img src="img/app-img/rise3.jpg" alt="">
+						<div class="qr">
+							<img src="img/app-img/rise-qr.png" alt="">
+							<div class="download-apple"></div>
+						</div>
+					</div>
+
+				</a>
+			</section>
+
+			<div class="content-card">
+				
+			</div>
+
+			<div class="content-card">
+				
+			</div>
+		</article>
+	</div>
+	<div class="right-side">
+		<div class="side-card"></div>
+	</div>
+
+</div>
+
+<script src="jquery-1.9.1.min.js"></script>
 
 </body>
 

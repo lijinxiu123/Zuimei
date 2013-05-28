@@ -297,6 +297,9 @@ button,
 input {
     line-height: normal;
 }
+button:hover{
+    cursor: pointer;
+}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -400,4 +403,8 @@ textarea {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+div{
+    box-sizing:border-box;
 }

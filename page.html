@@ -218,19 +218,20 @@ $(document).ready(function(){
 	}); 
 		//fold content
 	
+	$('#unfold-content').click(function(){
+			$('#fold-area').toggle(function(){
+				if($(this).is(':visible')){
+          		 	$('#fold-words').html("收起内容")
+				}
+       			else{
+           			$("#fold-words").html("展开全部")
+       			}
+			});
+			$('.unfold-triangle-down').toggleClass('unfold-rotate');
+	}) 
 		
 });
-			var result1=$('#fold-words').html();
-			if(result1==='展开全部'){
-				$('#unfold-content').click(function() {
-			 	$('#fold-area').show();
-				$('#fold-words').html('收起内容');
-				$('.unfold-triangle-down').addClass('unfold-rotate');
-			})
-			}
-			if($('.unfold-triangle-down').hasClass('unfold-rotate')){
-				alert('what');
-			}
+			
 
 	var followedweixinzuimei=localStorage.getItem('followedweixinzuimei');
 	var followedweibozuimei=localStorage.getItem('followedweibozuimei');

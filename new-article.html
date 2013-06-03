@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>最美应用-推荐应用</title>
+<title>最美应用-首页</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link rel="icon" href="favicon.ico" type="image/-icon" />
@@ -11,23 +10,54 @@
 <link href="css/normalize.css" rel="stylesheet" type="text/css" />
 <link href="css/base.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-
-<style>
-	label{
+<style type="text/css">
+	.button-archive,
+	.button-publish,
+	.button-upload-icon{
+		background-color: #B8B8B8;
+		border: 0;
+		width: 80px;
+		text-align: center;
+		padding:8px 0;
+		color: #fff;
+		font-size: 14px;
+		cursor: pointer;
 		float: left;
-		width: 100px;
-		line-height: 32px;
-		vertical-align: middle;
-		text-align: left;
-		color: #666;
+		margin-right: 20px;
 	}
-
-
-	
+	.button-publish{
+		background-color: #ffad01;
+		margin-right: 0;
+	}
+	.upload-icon{
+		display: block;
+		background-color: #e7e7e7;
+		width: 60px;
+		height: 60px;
+		border-radius: 8px;
+		border: none;
+		text-align: center;
+		line-height: 60px;
+		cursor: pointer;
+		float: left;
+	}
+	.button-upload-icon{
+		float: left;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	#new-article-title{
+		width: 600px;
+		margin-top: 20px;
+	}
 </style>
 </head>
+
+
+
 <body>
-	<header id="site-header">
+	
+<header id="site-header">
 		<div class="container">
 			<a href="index.html" class="logo">
 				<img src="img/titlebar_logo.png" alt="">
@@ -36,7 +66,7 @@
 			<nav>
 				<ul id="nav">
 					<li><a href="index.html" class="nav-item">iPhone</a></li>
-					<li><a href="page.html" class="nav-item">Android</a></li>
+					<li><a href="android.html" class="nav-item">Android</a></li>
 				</ul>
 			</nav>
 
@@ -64,12 +94,18 @@
 	<div class="container">
 		<div class="left-side">
 			<div class="content-card">
-			<fieldset>
-				<h4>我来推荐更美的应用</h4>
-				<hr>
+				<div>
+					<h4 class="pull-left">撰写新文章</h4>
+					<div class="pull-right">	
+						<button class="button-archive">存草稿</button>
+						<button class="button-publish">发布</button>
+					</div>
+				</div>
+				<hr>	
+				<fieldset>
 				<form action="index.html">
 					<div>
-						<label><h5>应用平台</h5></label>
+						<label><h5>选择发布平台</h5></label>
 						<div class="checkbox-list">
 							<input type="checkbox" name="plate" value="iPhone"><span class="checkbox">iPhone</span>
 							<input type="checkbox" name="plate" value="Android"><span class="checkbox">Android</span>
@@ -77,40 +113,55 @@
 					</div>
 
 					<div>
-						<label><h5>应用名称</h5></label>
-						<input type="text">
+						<label><a class="upload-icon">icon</a></label>
+						<button class="button-upload-icon">上传图标</button>
 					</div>
 
 					<div>
-						<label><h5>下载地址</h5></label>
-						<input type="text">
+						<input type="text" id="new-article-title" value="文章标题">
 					</div>
 
 					<div>
-						<label><h5>您的评价</h5></label>
-						<textarea name="comment" id="" cols="60" rows="10"></textarea>
+						<textarea name="comment" id="" cols="80" rows="6">摘要，120字以内</textarea>
 					</div>
 
 					<div>
-						<label><h5>你的姓名</h5></label>
-						<input type="text">
+						<textarea name="comment" id="" cols="80" rows="6">其他内容（选填）</textarea>
+					</div>
+
+					<div>
+						<label><h5>撰写文章内容</h5></label>
 					</div>
 					<div>
-						<label><h5>电子邮箱</h5></label>
-						<input type="text">
+						<textarea name="comment" id="" cols="80" rows="6"></textarea>
 					</div>
-					<div class="button-wrapper">
-						<button class="button-submit">添加用户</button>
-						<button class="button-cancel">取消</button>
-					</div>
+
 				</form>
 			</fieldset>
 			</div>
-		</div>
-		
+			</div>
+
+			<div class="right-side">
+				
+				<div class="side-card">
+					<h4>下载地址</h4>
+					<img src="" alt="">
+					<button class="button-upload-icon">上传二维码</button>
+					<input type="text" value="应用下载地址">
+				</div>
+
+				<div class="side-card">
+					<h4>下载地址</h4>
+					<input type="text"><button class="button-upload-icon">添加</button>
+				</div>
+
+
+
+
 		</div>
 	</div>
-	<script src="js/jquery-1.9.1.min.js"></script>
+
+<script src="js/jquery-1.9.1.min.js"></script>
 	<script>
 		$('document').ready(function(){
 			var editarea=$('.edit-area');
@@ -128,6 +179,7 @@
 		})
 
 	</script>
+
 
 </body>
 

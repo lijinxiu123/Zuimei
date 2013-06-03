@@ -35,10 +35,10 @@
 					<div class="manage-list" style="display:none">
 						<span class="triangle-up"></span>
 						<ul>
-							<li><a href="" id="new-article">发表新文章</a></li>
-							<li><a href="" id="article-manage">文章管理</a></li>
-							<li><a href="" id="user-manage">用户管理</a></li>
-							<li><a href="" id="logout">退出登录</a></li>
+							<li><a href="new-article.html" id="new-article" class="manage-list-item">发表文章</a></li>
+							<li><a href="article-manage.html" id="article-manage" class="manage-list-item">文章管理</a></li>
+							<li><a href="user-manage.html" id="user-manage" class="manage-list-item">用户管理</a></li>
+							<li><a href="" id="logout" class="manage-list-item">退出登录</a></li>
 						</ul>
 					</div>
 			</div>
@@ -117,8 +117,28 @@
 						<img src="img/app-img/rise3.jpg"  class="article-page-img" alt="">		
 					</div>
 					<p>另外，闹钟还可以设定不同的铃声，你也可以把你喜欢的音乐通过 iTunes 设定为铃声。</p>
+
+					<div id="fold-area">
+						<p>
+						这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。
+					</p>
+					<p>
+进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间。上下滑动时不同的颜色变化也很漂亮，白天的时间则是明亮的彩色渐变，晚上的时间则偏暗。设定好时间后向左或者向右滑动，闹钟就生效了。</p>
+					<p>
+						另外，闹钟还可以设定不同的铃声，你也可以把你喜欢的音乐通过 iTunes 设定为铃声。
+					</p>
+					
+					<div class="bottom2">
+						<img src="img/app-img/rise2.jpg"  class="article-page-img" alt="">			
+						<img src="img/app-img/rise3.jpg"  class="article-page-img" alt="">		
+					</div>
+					<p>另外，闹钟还可以设定不同的铃声，你也可以把你喜欢的音乐通过 iTunes 设定为铃声。</p>
+					</div>
+
+
+
 					<div class="unfold auto">
-						<span>展开全部</span><span class="triangle-down"></span>
+						<a id="unfold-content"><span id="fold-words">展开全部</span><span class="unfold-triangle-down"></span></a>
 					</div>
 				</div>
 			</section>
@@ -142,7 +162,7 @@
 					<p>
 						<img src="img/quotation_mark.png" alt="" class="quote-icon">
 						<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate">
+						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
 					</p>
 					<a href="#" class="editable">编辑</a>
 				</div>
@@ -154,7 +174,7 @@
 					<p>
 						<img src="img/quotation_mark.png" alt="" class="quote-icon">
 						<span class="quote-text">1、注册时，填好姓名、邮箱、密码之后，就让我“登出” ？这是汉化版的 Bug 么，翻译的人中文没学好？我是又出去了一次再进来后，确定没有别的地方可点才点了那个“登出”按钮，居然登录了~~录了~~了~~ <br/>2、之前用 Bamboo note 的时候配合 Stylus 的体验就很爽，这个涂鸦式的清新纸条体验，一下就让我回到那个高中的男生一个晚自习给我写了4封情书的年代啊~ 3、就是编辑的画框有点小，大一点就好了。</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate">
+						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
 					</p>
 				</div>
 			</section>
@@ -173,42 +193,60 @@ $(document).ready(function(){
 	// lazyLoad
 	$("img:not(.not-lazy)").lazyload({ 
 		effect:"fadeIn"
-	})
+	});
+	// account list 
+	$('.account-manage').click(function(){
+		$('.manage-list').toggle();
+	});
+	// unfold tags
+	$('#tag-unfold').click(function(){
+		$('.tag2').toggle();
+	});
+	
 	// set and get the localstorage value to judge if Weixin,weibo should appear
 	$('.followed>b').click(function(){
 		$(this).parent().parent().hide();
-	})
+	});
 	$('#followed-weixin-zuimei>b').click(function(){
-		localStorage.setItem('followedweixinzuimei','3');
-	}) 
+		localStorage.setItem('followedweixinzuimei','1');
+	});
 	$('#followed-weibo-bri>b').click(function(){
-		localStorage.setItem('followedweibobri','3');
-	}) 
+		localStorage.setItem('followedweibobri','1');
+	}); 
 	$('#followed-weibo-zuimei>b').click(function(){
-		localStorage.setItem('followedweibozuimei','3');
-	}) 
-})
+		localStorage.setItem('followedweibozuimei','1');
+	}); 
+		//fold content
+	
+		
+});
+			var result1=$('#fold-words').html();
+			if(result1==='展开全部'){
+				$('#unfold-content').click(function() {
+			 	$('#fold-area').show();
+				$('#fold-words').html('收起内容');
+				$('.unfold-triangle-down').addClass('unfold-rotate');
+			})
+			}
+			if($('.unfold-triangle-down').hasClass('unfold-rotate')){
+				alert('what');
+			}
+
 	var followedweixinzuimei=localStorage.getItem('followedweixinzuimei');
 	var followedweibozuimei=localStorage.getItem('followedweibozuimei');
 	var followedweibobri=localStorage.getItem('followedweibobri');
 	
-	if(followedweixinzuimei==3){
+	if(followedweixinzuimei==1){
 	$('#followed-weixin-zuimei').parent().hide();
-	}
-	if(followedweibozuimei==3){
+	};
+	if(followedweibozuimei==1){
 	$('#followed-weibo-zuimei').parent().hide();
-	}
-	if(followedweibobri==3){
+	};
+	if(followedweibobri==1){
 	$('#followed-weibo-bri').parent().hide();
-	}
-	// account list 
-	$('.account-manage').click(function(){
-		$('.manage-list').toggle();
-	})
-	// unfold tags
-	$('#tag-unfold').click(function(){
-		$('.tag2').toggle();
-	})
+	};
+
+
 </script>
 </body>
 </html>

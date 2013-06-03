@@ -46,25 +46,20 @@
 		box-sizing:border-box;
 		display: block;
 	}
+	.header-article-title{
+		width: 540px;
+	}
 	.header-username{
-		width: 190px;
+		width: 80px;
 	}
-	.header-real-name{
-		width: 190px;
+	.header-plate{
+		width: 200px;
 	}
-	.header-email{
-		width: 300px;
+	.header-date{
+		width: 75px;
 	}
-	.header-role{
-		width: 90px;
-	}
-	.header-article{
-		width: 65px;
-	}
-	.header-comment{
-		width: 50px;
-	}
-	h3{
+	
+		h3{
 		font-size: 12px;	
 	}
 	h3.dark{
@@ -99,6 +94,10 @@
 		color: #000;
 
 	}
+	.list-search{
+		position: relative;
+	}
+	
 </style>
 </head>
 <body>
@@ -139,129 +138,101 @@
 	<div class="container">
 		<div class="content-card">
 			<div>	
-				<h4 class="pull-left">用户管理</h4>
-				<a href="" class="pull-right add-user"><h4>添加新用户</h4></a>
+				<h4 class="pull-left">文章管理</h4>
+				<a href="" class="pull-right add-user"><h4>发表新文章</h4></a>
 			</div>
 			<hr>	
 
 		<fieldset>
 			<form action="">
 				<select class="pull-left">
-				  <option value="all">所有用户</option>
-				  <option value="editor">编辑</option>
-				  <option value="user">普通用户</option>
-				  <option value="manager">管理员</option>
+				  <option value="all">全部文章(<span id="all">118</span>)</option>
+				  <option value="editor">已发布(<span id="published">100</span>)</option>
+				  <option value="user">草稿(<span id="archive">18</span>)</option>
 				</select>
-				<input type="search" class="pull-right search-user" class="default-search">
+				<select class="pull-left left1">
+				  <option value="all">全部平台(<span id="all-plate">118</span>)</option>
+				  <option value="editor">iPhone(<span id="iPhone">72</span>)</option>
+				  <option value="user">Android(<span id="Android">46</span>)</option>
+				</select>
+				<div class="list-search">
+				<input type="search" class="pull-right search-user" class="list-search" value="搜索文章">
+				<a class="small-search-icon"></a>
+				</div>
 			</form>		
 		</fieldset>
 			
 		<ul class="manage-user-list-wrapper">
 			<li>
 				<ul class="manage-user-list-header">
-					<li class="header-username"><h3 class="dark">用户名</h3></li>
-					<li class="header-real-name"><h3 class="dark">名称</h3></li>
-					<li class="header-email"><h3 class="dark">电子邮件</h3></li>
-					<li class="header-role"><h3 class="dark">角色</h3></li>
-					<li class="header-article"><h3 class="dark">文章</h3></li>
-					<li class="header-comment"><h3 class="dark">评论</h3></li>
+					<li class="header-article-title"><h3 class="dark">标题</h3></li>
+					<li class="header-username"><h3 class="dark">作者</h3></li>
+					<li class="header-plate"><h3 class="dark">平台</h3></li>
+					<li class="header-date"><h3 class="dark">状态/日期</h3></li>
 				</ul>
-
-
 			</li>
 
 			<li>
 				
 				<ul class="manage-user-list-header">
-					<li class="header-username">
-						<h3 class="dark">Jiangkui</h3>
+					<li class="header-article-title">
+						<h3 class="dark">Scotland’s Big 5 — 试试和威廉·华莱士一起奔跑在苏格兰山地</h3>
 						<div class="edit-area">
 							<a href="#" class="edit">修改</a>
 							<a href="#" class="separator">|</a>
 							<a href="#" class="delete">删除</a>
 						</div>
 					</li>
-					<li class="header-real-name"><h3 class="dark">姜奎</h3>
-						<div>
-							<h3 class="sub">最美设计师</h3>
-						</div>
-					</li>
-					<li class="header-email"><h3 class="dark">jiang.kui@brixd.com</h3></li>
-					<li class="header-role"><h3>管理员</h3></li>
-					<li class="header-article"><h3>14</h3></li>
-					<li class="header-comment"><h3>2</h3></li>
-				</ul>
 
+					<li class="header-username"><h3 class="dark">姜奎</h3>
+					</li>
+					<li class="header-plate"><h3 class="dark">iPhone、Android、Windows</h3></li>
+					<li class="header-date">
+						<h3 class="dark">草稿</h3>
+						<div><h3>2小时前</h3></div>
+					</li>
+				</ul>
 			</li>
 			<li>
-				
 				<ul class="manage-user-list-header">
-					<li class="header-username">
-						<h3 class="dark">Jiangkui</h3>
+					<li class="header-article-title">
+						<h3 class="dark">Scotland’s Big 5 — 试试和威廉·华莱士一起奔跑在苏格兰山地</h3>
 						<div class="edit-area">
 							<a href="#" class="edit">修改</a>
 							<a href="#" class="separator">|</a>
 							<a href="#" class="delete">删除</a>
 						</div>
 					</li>
-					<li class="header-real-name"><h3 class="dark">姜奎</h3>
-						<div>
-							<h3 class="sub">最美设计师</h3>
-						</div>
+					<li class="header-username"><h3 class="dark">姜奎</h3>
 					</li>
-					<li class="header-email"><h3 class="dark">jiang.kui@brixd.com</h3></li>
-					<li class="header-role"><h3>管理员</h3></li>
-					<li class="header-article"><h3>14</h3></li>
-					<li class="header-comment"><h3>2</h3></li>
+					<li class="header-plate"><h3 class="dark">iPhone</h3></li>
+					<li class="header-date">
+						<h3 class="dark">草稿</h3>
+						<div><h3>2小时前</h3></div>
+					</li>
 				</ul>
-
 			</li>
 			<li>
-				
 				<ul class="manage-user-list-header">
-					<li class="header-username">
-						<h3 class="dark">Jiangkui</h3>
+					<li class="header-article-title">
+						<h3 class="dark">Scotland’s Big 5 — 试试和威廉·华莱士一起奔跑在苏格兰山地</h3>
 						<div class="edit-area">
 							<a href="#" class="edit">修改</a>
 							<a href="#" class="separator">|</a>
 							<a href="#" class="delete">删除</a>
 						</div>
 					</li>
-					<li class="header-real-name"><h3 class="dark">姜奎</h3>
-						<div>
-							<h3 class="sub">最美设计师</h3>
-						</div>
+					<li class="header-username"><h3 class="dark">姜奎</h3>
 					</li>
-					<li class="header-email"><h3 class="dark">jiang.kui@brixd.com</h3></li>
-					<li class="header-role"><h3>管理员</h3></li>
-					<li class="header-article"><h3>14</h3></li>
-					<li class="header-comment"><h3>2</h3></li>
+					<li class="header-plate"><h3 class="dark">iPhone</h3></li>
+					<li class="header-date">
+						<h3 class="dark">草稿</h3>
+						<div><h3>2小时前</h3></div>
+					</li>
+					
 				</ul>
-
 			</li>
-			<li>
-				
-				<ul class="manage-user-list-header">
-					<li class="header-username">
-						<h3 class="dark">Jiangkui</h3>
-						<div class="edit-area">
-							<a href="#" class="edit">修改</a>
-							<a href="#" class="separator">|</a>
-							<a href="#" class="delete">删除</a>
-						</div>
-					</li>
-					<li class="header-real-name"><h3 class="dark">姜奎</h3>
-						<div>
-							<h3 class="sub">最美设计师</h3>
-						</div>
-					</li>
-					<li class="header-email"><h3 class="dark">jiang.kui@brixd.com</h3></li>
-					<li class="header-role"><h3>管理员</h3></li>
-					<li class="header-article"><h3>14</h3></li>
-					<li class="header-comment"><h3>2</h3></li>
-				</ul>
-
-			</li>
+			
 			
 			
 		</ul>

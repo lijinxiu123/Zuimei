@@ -51,11 +51,18 @@ span{
   font-size: 14px;
 }
 input{
-    border: 0;
+    border: 1px solid #DADADA;
     font-size: 14px;
     color: #868686;
     padding:8px 10px ;
     margin-bottom: 10px;
+}
+textarea {
+    margin-bottom: 10px;
+    border: 1px solid #DADADA;
+    color: #868686;
+    font-size: 14px;
+    padding: 8px 10px;
 }
 textarea:focus, 
 input[type="text"]:focus, 
@@ -74,6 +81,8 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 input[type="search"]:focus,
 input[type="search"]:active{
+
+    border: 1px solid #bebebe;
       box-shadow: 0；
       -webkit-box-shadow: 0;
        -moz-box-shadow: 0;

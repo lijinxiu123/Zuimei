@@ -33,15 +33,16 @@
 					<div class="manage-list">
 						<span class="triangle-up"></span>
 						<ul>
-							<li><a href="" id="new-article" class="manage-list-item">发表文章</a></li>
-							<li><a href="" id="article-manage" class="manage-list-item">文章管理</a></li>
-							<li><a href="" id="user-manage" class="manage-list-item">用户管理</a></li>
+							<li><a href="new-article.html" id="new-article" class="manage-list-item">发表文章</a></li>
+							<li><a href="article-manage.html" id="article-manage" class="manage-list-item">文章管理</a></li>
+							<li><a href="user-manage.html" id="user-manage" class="manage-list-item">用户管理</a></li>
 							<li><a href="" id="logout" class="manage-list-item">退出登录</a></li>
 						</ul>
 					</div>
 			</div>
 			<form action="" class="search">
 				<input type="search" value="搜索最美应用" class="default-search">
+				<a class="search-icon"></a>
 			</form>
 		</div>
 	</header>
@@ -99,7 +100,8 @@
 					<p>这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间……</p>
 					<div class="article-img">
 						<div class="app-img">
-						<img src="img/app-img/rise.jpg" alt="" class="not-lazy">
+							<!-- class="not-lazy" 让第一张图取消lazyload效果 -->
+						<a href="page.html"><img src="img/app-img/rise.jpg" alt="" class="not-lazy"></a>
 						</div>
 						<div class="qr">
 						<img src="img/zuimei-qr.png" class="app-qr-img not-lazy" alt="">
@@ -110,7 +112,7 @@
 					<p>
 						<img src="img/quotation_mark.png" alt="" class="quote-icon">
 						<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate">
+						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
 					</p>
 
 				</div>
@@ -129,7 +131,7 @@
 					<p>这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间……</p>
 					<div class="article-img">
 						<div class="app-img">
-						<img data-original="img/app-img/rise.jpg"src="img/img-loading.png" alt="" class="lazy">
+						<a href=""><img data-original="img/app-img/rise.jpg"src="img/img-loading.png" alt="" ></a>
 						</div>
 						<div class="qr">
 						<img data-original="img/app-img/rise-qr.png" src="img/img-loading.png" class="app-qr-img" alt="">
@@ -140,7 +142,7 @@
 					<p>
 						<img src="img/quotation_mark.png" alt="" class="quote-icon">
 						<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate">
+						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
 					</p>
 
 				</div>
@@ -159,7 +161,7 @@
 					<p>这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间……</p>
 					<div class="article-img">
 						<div class="app-img">
-						<img data-original="img/app-img/rise.jpg"src="img/img-loading.png" alt="" class="lazy">
+						<img data-original="img/app-img/rise.jpg"src="img/img-loading.png" alt="" >
 						</div>
 						
 						<div class="qr">
@@ -171,7 +173,7 @@
 					<p>
 						<img src="img/quotation_mark.png" alt="" class="quote-icon">
 						<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate">
+						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
 					</p>
 
 				</div>
@@ -200,7 +202,7 @@
 		</article>
 	</div>
 	<div class="right-side">
-		<a class="side-card center add">
+		<a href="suggest-app.html" class="side-card center add">
 			<img src="img/home_add_normal.png" alt="" class="add-icon">
 			<h6 class="add-text">我来推荐最美应用</h6>
 		</a>
@@ -232,31 +234,31 @@
 			<a href="page.html"><h3>Rise - 极简的闹钟应用</h3></a>
 			<ul class="top1">
 				<li>
-					<a href="#" class="hot-app">
+					<a href="page.html" class="hot-app">
 					<h2>Listen</h2>
 					<h3>听听你周边的人在听什么</h3>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="hot-app">
+					<a href="page.html" class="hot-app">
 					<h2>Listen</h2>
 					<h3>听听你周边的人在听什么什么什么什么</h3>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="hot-app">
+					<a href="page.html" class="hot-app">
 					<h2>Listen</h2>
 					<h3>听听你周边的人在听什么</h3>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="hot-app">
+					<a href="page.html" class="hot-app">
 					<h2>Listen</h2>
 					<h3>听听你周边的人在听什么</h3>
 					</a>
 				</li>
 				<li>
-					<a href="#" class="hot-app">
+					<a href="page.html" class="hot-app">
 					<h2>Listen</h2>
 					<h3>听听你周边的人在听什么</h3>
 					</a>
@@ -282,26 +284,26 @@ $(document).ready(function(){
 		$(this).parent().parent().hide();
 	})
 	$('#followed-weixin-zuimei>b').click(function(){
-		localStorage.setItem('followedweixinzuimei','3');
+		localStorage.setItem('followedweixinzuimei','1');
 	}) 
 	$('#followed-weibo-bri>b').click(function(){
-		localStorage.setItem('followedweibobri','3');
+		localStorage.setItem('followedweibobri','1');
 	}) 
 	$('#followed-weibo-zuimei>b').click(function(){
-		localStorage.setItem('followedweibozuimei','3');
+		localStorage.setItem('followedweibozuimei','1');
 	}) 
 })
 	var followedweixinzuimei=localStorage.getItem('followedweixinzuimei');
 	var followedweibozuimei=localStorage.getItem('followedweibozuimei');
 	var followedweibobri=localStorage.getItem('followedweibobri');
 	
-	if(followedweixinzuimei==3){
+	if(followedweixinzuimei==1){
 	$('#followed-weixin-zuimei').parent().hide();
 	}
-	if(followedweibozuimei==3){
+	if(followedweibozuimei==1){
 	$('#followed-weibo-zuimei').parent().hide();
 	}
-	if(followedweibobri==3){
+	if(followedweibobri==1){
 	$('#followed-weibo-bri').parent().hide();
 	}
 	// account list 

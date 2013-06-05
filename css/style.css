@@ -216,7 +216,7 @@ footer{
 	background-repeat: no-repeat;
 	background-size: contain;
 	position: absolute;
-	bottom: -10px;
+	bottom: 0px;
 	right: -70px;
 }
 
@@ -243,6 +243,9 @@ footer{
 }
 .tag1 li{
 	float: left;
+}
+.clear{
+	clear:both;
 }
 #tag-unfold{
 	padding:22px 20px 10px 20px;
@@ -271,20 +274,37 @@ footer{
 
 
 /*article*/
+
 .article-title{
 	overflow: hidden;
 	vertical-align: middle;
 	margin-bottom: 20px;
 }
-h1.app-title{
+.app-title{
 	float: left;
+	width: 570px;
 }
-.app-title:hover{
-	color: #727272;
+a.mute:hover{
+	color: #FFB400;
 }
-.app-icon{
+.app-title h1:hover{
+	color: #505050;
+}
+.app-icon,
+.hot-app-icon{
 	float: left;
 	margin-right: 20px;
+	margin-top: 0;
+}
+.hot-app-icon{
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.hot-app-icon img,
+.app-icon img{
+	width:50px;
+	height: 50px;
+	border-radius: 12px;
 }
 .app-icon img{
 	width:60px;
@@ -381,7 +401,17 @@ img.quote-icon{
   bottom: 0;
   right: 0
 }
-
+.more{
+	position: absolute;
+	right: 12px;
+	bottom: 10px;
+	color: #FFAD00;
+	cursor: pointer;
+}
+.more:hover,
+.more:active{
+	color: #000；
+}
 
 
 
@@ -437,9 +467,7 @@ img.hot{
 .text-bottom{
   padding-bottom: 10px;
 }
-.text-left{
-  padding-left: 5px;
-}
+
 .text-right{
   padding-right: 5px;
 }
@@ -474,7 +502,7 @@ img.hot{
 	margin: 0;
 }
 .orange{
-	color: #ee9201;
+	color: #FFB400;
 }
 .mute{
 	color: #C4C4C4;
@@ -549,17 +577,24 @@ img.hot{
 	transition: .1s;
 }
 
-/*checkbox*/
+/*添加用户页面的checkbox*/
 span.checkbox{
 	padding-left: 10px;
 	margin-right: 30px;
 	color: #858585;
 }
-.checkbox-list{
+.checkbox-list,
+.plate-checkbox-list{
 	float: left;
 	margin-top: 4px;
 	padding-left: 1px;
 	margin-bottom: 10px;
+}
+/*添加应用页面的checkbox*/
+.plate-checkbox-list{
+	margin-top: 10px;
+	padding-left: 1px;
+	margin-bottom: 0px;
 }
 /*提交、取消按钮*/
 .button-wrapper{

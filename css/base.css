@@ -113,8 +113,7 @@ ul {
 }
 h1{
   font-size: 24px;
-  margin: 14px 0;
-  color: #000;
+  margin: 5px 0 2px;
 }
 
 /*右侧推荐标题*/
@@ -156,6 +155,9 @@ p{
   margin:0 0 25px 0;
   font-size: 14px;
   clear: both;
+}
+section{
+  position: relative;
 }
 
 

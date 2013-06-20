@@ -10,30 +10,88 @@
 <link href="css/normalize.css" rel="stylesheet" type="text/css" />
 <link href="css/base.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-
+<style>
+	label{
+		float: left;
+		width: 100px;
+		line-height: 32px;
+		vertical-align: middle;
+		text-align: left;
+		color: #666;
+	}
+	input[type="text"]{
+		width: 225px;
+	}
+	.button-wrapper{
+		width: 150px;
+	}
+	.detail-icon {
+		position: absolute;
+		top: 30px;
+		right: 25px;
+	}
+	.detail-icon:hover{
+		opacity: .5;
+	}
+	.quote-area{
+		background-color: #f7f7f7;
+		overflow: hidden;
+		padding: 25px;
+		margin-bottom: 10px;
+	}
+	.hot li{
+		clear: both;
+	}
+</style>
 </head>
 <body>
 	<header id="site-header">
-		<div class="container">
+		<div class="container visible">
 			<a href="index.html" class="logo">
 				<img src="img/titlebar_logo.png" alt="">
 			</a>
-			<a class="site-address">ZuimeiA.com</a>
-			<nav>
-				<ul id="nav">
-					<li><a href="index.html" class="nav-item">iPhone</a></li>
-					<li><a href="#" class="nav-item active-nav-item">Android</a></li>
+			<div>
+				<nav>
+					<ul id="nav">
+						<li><a href="index.html" class="nav-item">iPhone</a></li>
+						<li><a class="nav-item active-nav-item">Android</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			<div class="tag-container">
+				<ul class="tag1" id="tag1">
+					<li><a href="#" class="active-tag">全部</a></li>
+					<li><a href="#">教育</a></li>
+					<li><a href="#">图书</a></li>
+					<li><a href="#">工具</a></li>
+					<li><a href="#">效率</a></li>
+					<li><a href="#">艺术</a></li>
+					<li><a href="#">儿童</a></li>
+					<li><a href="#" class="last">视频</a></li>
+					<li id="tag-unfold"><span class="triangle-down"></span></li>
 				</ul>
-			</nav>
 
+
+				<ul class="tag2" id="tag2">
+					<li><a href="#">财务</a></li>
+					<li><a href="#">参考</a></li>
+					<li><a href="#">导航</a></li>
+					<li><a href="#">娱乐</a></li>
+					<li><a href="#">旅行</a></li>
+					<li><a href="#">生活</a></li>
+					<li><a href="#">体育</a></li>
+					<li><a href="#">天气</a></li>
+					
+				</ul>
+			</div>
+			</div>
 			<div class="account">
 				<a href="#" class="account-manage">
-					<img src="img/titlebar_personal_normal.png" alt="">
+					<img src="img/titlebar_personal.png" alt="">
 				</a>
 					<div class="manage-list">
 						<span class="triangle-up"></span>
 						<ul>
-							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布文章</a></li>
 							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布专题</a></li>
 							<li><a href="article-manage.html" id="article-manage" class="manage-list-item">文章管理</a></li>
 							<li><a href="user-manage.html" id="user-manage" class="manage-list-item">用户管理</a></li>
@@ -41,8 +99,9 @@
 						</ul>
 					</div>
 			</div>
+
 			<form action="" class="search">
-				<input type="search" value="搜索最美应用" class="default-search">
+				<input type="search" placeholder="搜索最美应用" class="default-search">
 				<a class="search-icon"></a>
 			</form>
 		</div>
@@ -50,74 +109,33 @@
 
 	<div class="container">
 	<div class="left-side">
-		<header>
-		<div class="tag-card">
-			<ul class="tag1" id="tag1">
-				<li><a href="#" class="active-tag">全部</a></li>
-				<li><a href="#">教育</a></li>
-				<li><a href="#">图书</a></li>
-				<li><a href="#">工具</a></li>
-				<li><a href="#">效率</a></li>
-				<li><a href="#">艺术</a></li>
-				<li><a href="#">儿童</a></li>
-				<li><a href="#" class="last">视频</a></li>
-				<li id="tag-unfold"><span class="triangle-down"></span></li>
-			</ul>
-
-			<ul class="tag2" id="tag2">
-				<li><a href="#">财务</a></li>
-				<li><a href="#">参考</a></li>
-				<li><a href="#">导航</a></li>
-				<li><a href="#">娱乐</a></li>
-				<li><a href="#">旅行</a></li>
-				<li><a href="#">生活</a></li>
-				<li><a href="#">体育</a></li>
-				<li><a href="#">天气</a></li>
-				<li><a href="#">新闻</a></li>
-				<li><a href="#">医疗</a></li>
-				<li><a href="#">音乐</a></li>
-				<li><a href="#">游戏</a></li>
-				<li><a href="#">社交</a></li>
-				<li><a href="#">商业</a></li>
-				<li><a href="#">美食佳饮</a></li>
-				<li><a href="#">商品指南</a></li>
-				<li><a href="#">报刊杂志</a></li>
-				<li><a href="#">健康健美</a></li>
-				<li><a href="#">摄影与录像</a></li>
-			</ul>
-		</div>
-		</header>	
+		
 		<article>
 			<section>
 				<div class="content-card">
 					<div class="article-title">
 						<div class="app-icon">
-							<a href="page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
+							<a href="android-page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
 						</div>
-						<a href="page.html" class="app-title">
-							<h1>Rise Alarm Clock-极简风格的闹钟</h1>
-							<span class="mute">2013-06-06 14:00</span>
+						<a href="android-page.html" class="app-title">
+							<h1>Rise Alarm Clock</h1>
+							<h3 class="mute">极简风格的闹钟</h3>
 						</a>
-
+					</div>
+					<a class="detail-icon" href="android-page.html"><img src="img/home_enterinto_normal.png" alt=""></a>
+				
+					<div class="article-img">
+						<img data-original="img/app-img/rise.jpg" src="img/img-loading.png" alt="" style="display: inline;">
 					</div>
 					
-					<p>这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间……</p>
-					<div class="article-img">
-						<div class="app-img">
-						<img src="img/app-img/rise.jpg" alt="" class="not-lazy">
-						</div>
-						<div class="qr">
-						<img src="img/zuimei-qr.png" class="app-qr-img not-lazy" alt="">
-						<a href="#" class="download-apple">App Store 下载</a>
-						</div>
-					</div>
-					<p><strong>姜奎 </strong> 设计师：</p>
-					<p>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon">
-						<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
-					</p>
-
+				</div>
+				<div class="quote-area">
+						<p><strong>姜奎 </strong> 设计师：</p>
+						<p>
+							<img src="img/quotation_mark.png" alt="" class="quote-icon">
+							<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
+							<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
+						</p>
 				</div>
 			</section>
 
@@ -125,29 +143,27 @@
 				<div class="content-card">
 					<div class="article-title">
 						<div class="app-icon">
-							<a href="page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
+							<a href="android-page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
 						</div>
-						<h1>Rise Alarm Clock-极简风格的闹钟</h1>
-
+						<a href="android-page.html" class="app-title">
+							<h1>Rise Alarm Clock</h1>
+							<h3 class="mute">极简风格的闹钟</h3>
+						</a>
+					</div>
+					<a class="detail-icon" href="android-page.html"><img src="img/home_enterinto_normal.png" alt=""></a>
+				
+					<div class="article-img">
+						<img data-original="img/app-img/rise.jpg" src="img/img-loading.png" alt="" style="display: inline;">
 					</div>
 					
-					<p>这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间……</p>
-					<div class="article-img">
-						<div class="app-img">
-						<img data-original="img/app-img/rise.jpg"src="img/img-loading.png" alt="">
-						</div>
-						<div class="qr">
-						<img data-original="img/app-img/rise-qr.png" src="img/img-loading.png" class="app-qr-img" alt="">
-						<a href="#" class="download-apple">App Store 下载</a>
-						</div>
-					</div>
-					<p><strong>姜奎 </strong> 设计师：</p>
-					<p>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon">
-						<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
-					</p>
-
+				</div>
+				<div class="quote-area">
+						<p><strong>姜奎 </strong> 设计师：</p>
+						<p>
+							<img src="img/quotation_mark.png" alt="" class="quote-icon">
+							<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
+							<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
+						</p>
 				</div>
 			</section>
 
@@ -155,38 +171,66 @@
 				<div class="content-card">
 					<div class="article-title">
 						<div class="app-icon">
-							<a href="page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
+							<a href="android-page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
 						</div>
-						<h1>Rise Alarm Clock-极简风格的闹钟</h1>
-
+						<a href="android-page.html" class="app-title">
+							<h1>Rise Alarm Clock</h1>
+							<h3 class="mute">极简风格的闹钟</h3>
+						</a>
+					</div>
+					<a class="detail-icon" href="android-page.html"><img src="img/home_enterinto_normal.png" alt=""></a>
+				
+					<div class="article-img">
+						<img data-original="img/app-img/rise.jpg" src="img/img-loading.png" alt="" style="display: inline;">
 					</div>
 					
-					<p>这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间……</p>
-					<div class="article-img">
-						<div class="app-img">
-						<img data-original="img/app-img/rise.jpg"src="img/img-loading.png" alt="">
-						</div>
-						
-						<div class="qr">
-						<img data-original="img/app-img/rise-qr.png" src="img/img-loading.png" class="app-qr-img" alt="">
-						<a href="#" class="download-apple">App Store 下载</a>
-						</div>
-					</div>
-					<p><strong>姜奎 </strong> 设计师：</p>
-					<p>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon">
-						<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
-					</p>
-
+				</div>
+				<div class="quote-area">
+						<p><strong>姜奎 </strong> 设计师：</p>
+						<p>
+							<img src="img/quotation_mark.png" alt="" class="quote-icon">
+							<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
+							<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
+						</p>
 				</div>
 			</section>
+
+			<section>
+				<div class="content-card">
+					<div class="article-title">
+						<div class="app-icon">
+							<a href="android-page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
+						</div>
+						<a href="android-page.html" class="app-title">
+							<h1>Rise Alarm Clock</h1>
+							<h3 class="mute">极简风格的闹钟</h3>
+						</a>
+					</div>
+					<a class="detail-icon" href="android-page.html"><img src="img/home_enterinto_normal.png" alt=""></a>
+				
+					<div class="article-img">
+						<img data-original="img/app-img/rise.jpg" src="img/img-loading.png" alt="" style="display: inline;">
+					</div>
+					
+				</div>
+				<div class="quote-area">
+						<p><strong>姜奎 </strong> 设计师：</p>
+						<p>
+							<img src="img/quotation_mark.png" alt="" class="quote-icon">
+							<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
+							<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
+						</p>
+				</div>
+			</section>
+
+			
+			
 			<footer>
 				<div class="side-card">
 					<a href="#" class="pre-page">上一页</a>
 					<ul>
-						<li><a href="" class="page active-page">1</a></li>
-						<li><a href="" class="page">2</a></li>
+						<li><a href="#" class="page active-page">1</a></li>
+						<li><a href="android-page.html" class="page">2</a></li>
 						<li><a href="" class="page">3</a></li>
 						<li><a href="" class="page">4</a></li>
 						<li><a href="" class="page">5</a></li>
@@ -205,77 +249,213 @@
 		</article>
 	</div>
 	<div class="right-side">
+		<a href="new-article.html" class="side-card center add">
+			<img src="img/sidebar_addnewapp.png" alt="" class="add-icon">
+			<h6 class="add-text">发布应用</h6>
+		</a>
 		<a href="suggest-app.html" class="side-card center add">
-			<img src="img/home_add_normal.png" alt="" class="add-icon">
-			<h6 class="add-text">我来推荐最美应用</h6>
+					<img src="img/sidebar_recommend.png" alt="" class="add-icon">
+					<h6 class="add-text">我来推荐最美应用</h6>
 		</a>
 
 		<div class="side-card center add">
 			<img src="img/zuimei-qr.png" alt="" class="zuimei-qr">
-			<div class="center">
-				<h2>关注最美应用微信公众账号</h2>
-				<p class="no-margin mute">发现功能、交互和视觉最美的iPhone和Android应用。</p>
+			<div class="weixin">
+				<h5>关注最美应用微信账号</h5>
+				<p class="no-margin mute weixin-des">发现功能、交互和视觉最美的iPhone和Android应用。</p>
+			</div>
+			<div class="clear">
+				<hr>
 			</div>
 			<a class="followed" id="followed-weixin-zuimei"><b>X</b></a>
-		</div>
+			<div class="weibo-area">
 
-		<div class="side-card">
 				<iframe width="100%" height="80" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&	width=0&height=550&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=3310377062&verifier=85e63399&dpc=1" style="z-index:100"></iframe> 
 				<a class="followed" id="followed-weibo-zuimei"><b>X</b></a>
-		</div>
-
-		<div class="side-card">
+			</div>
+			<hr>
+			<div class="weibo-area">
+		
 				<iframe width="100%" height="80" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=2705358091&verifier=0f81d6c8&dpc=1" style="z-index:100"></iframe> 
 				<a class="followed" id="followed-weibo-bri"><b>X</b></a>
+			</div>
 		</div>
-
 		<div class="side-card">
 			<h5>热门</h5>
-			<div class="hot-img bottom1">
-				<img src="img/app-img/rise.jpg" alt="" class="hot">
-			</div>
-			<h3>Rise - 极简的闹钟应用</h3>
-			<ul class="top1">
+			
+			<ul class="top1 hot">
 				<li>
-					<a href="page.html" class="hot-app">
-					<h2>Listen</h2>
+					<div class="hot-app-icon">
+							<a href="android-page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
+						</div>
+					<a href="android-page.html" class="hot-app">
+
+					<h2>Rise</h2>
 					<h3>听听你周边的人在听什么</h3>
 					</a>
 				</li>
 				<li>
-					<a href="page.html" class="hot-app">
-					<h2>Listen</h2>
-					<h3>听听你周边的人在听什么什么什么什么</h3>
-					</a>
-				</li>
-				<li>
-					<a href="page.html" class="hot-app">
-					<h2>Listen</h2>
+										<div class="hot-app-icon">
+							<a href="android-page.html"><img src="img/app-icon/icon-path.jpg" alt=""></a>
+						</div>
+					<a href="android-page.html" class="hot-app">
+					<h2>Path</h2>
 					<h3>听听你周边的人在听什么</h3>
 					</a>
 				</li>
 				<li>
-					<a href="page.html" class="hot-app">
-					<h2>Listen</h2>
+										<div class="hot-app-icon">
+							<a href="android-page.html"><img src="img/app-icon/icon-camper.jpg" alt=""></a>
+						</div>
+					<a href="android-page.html" class="hot-app">
+					<h2>Camper</h2>
 					<h3>听听你周边的人在听什么</h3>
 					</a>
 				</li>
 				<li>
-					<a href="page.html" class="hot-app">
-					<h2>Listen</h2>
-					<h3>听听你周边的人在听什么</h3>
+										<div class="hot-app-icon">
+							<a href="android-page.html"><img src="img/app-icon/icon-line.jpg" alt=""></a>
+						</div>
+					<a href="android-page.html" class="hot-app">
+					<h2>Line</h2>
+					<h3>听听你周边的人在听什么人在听什么</h3>
+					</a>
+				</li>
+				<li>
+										<div class="hot-app-icon">
+							<a href="android-page.html"><img src="img/app-icon/icon-everest.jpg" alt=""></a>
+						</div>
+					<a href="android-page.html" class="hot-app">
+					<h2>Everest</h2>
+					<h3>每个人都可以成为“造梦者”</h3>
 					</a>
 				</li>
 			</ul>
 			
 		</div>
-
+		
+		
 	</div>
 
 </div>
+<div class="clear"></div>
 
+  <!-- footer -->
+
+  
+
+  <footer class="footer">
+  
+  
+  <div class="container">
+    
+    
+    <div class="navbar">
+      
+      
+      
+      
+      
+      
+      
+      
+      <ul class="nav bottom-nav">
+                
+                
+                <li><a href="index.html">iPhone</a></li>
+                
+                
+                <li><a href="android.html">Android</a></li>
+                
+                
+                <li><a href="htpp://brixd.com/about.html">关于我们</a></li>
+                
+                
+              
+              
+                
+                
+                <li><a href="http://share.brixd.com">体验之美</a></li>
+                
+        </ul>
+      
+      
+      <ul class="nav bottom-nav contact-info">
+        
+        
+        <li><a href="http://weibo.com/brixd" class="weibo"> weibo.com/brixd</a></li>
+        
+        
+      </ul>
+      
+      
+      
+      
+      
+    </div>
+    
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="container">
+    
+    
+    <hr class="footer">
+    
+    
+    <div class="contact bottom1 top2">
+      
+      
+      <h4 class="gray">北京总部</h4>
+      
+      
+      <ul class="address">
+        
+        
+        <li>北京市海淀区中关村大街27号中关村大厦603-605</li>
+        
+        
+        <li>邮编：100080</li>
+        
+        
+        <li>联系电话：010-53616906</li>
+        
+        
+        <li>商务邮箱：<a href="mailto:service@brixd.com" class="service-mail">service@brixd.com</a> </li>
+        
+        
+      </ul>
+       <div class="copyright">
+              
+              
+              <p>&copy;2013 Bri Experience Design & Development.<br>
+              京ICP备11031713号 京公网备案11010802009073</p>
+              
+              
+            </div>
+      
+    </div>
+    
+    
+            
+            
+            
+            
+            
+          </div>
+          
+          
+        </footer>
+        
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/jquery.lazyload.min.js"></script>
+
 <script>
 $(document).ready(function(){
 	// lazyLoad
@@ -287,40 +467,53 @@ $(document).ready(function(){
 		$(this).parent().parent().hide();
 	})
 	$('#followed-weixin-zuimei>b').click(function(){
-		localStorage.setItem('followedweixinzuimei','1');
+		localStorage.setItem('followedweixinzuimei','2');
 	}) 
 	$('#followed-weibo-bri>b').click(function(){
-		localStorage.setItem('followedweibobri','1');
+		localStorage.setItem('followedweibobri','2');
 	}) 
 	$('#followed-weibo-zuimei>b').click(function(){
-		localStorage.setItem('followedweibozuimei','1');
+		localStorage.setItem('followedweibozuimei','2');
 	}) 
 })
 	var followedweixinzuimei=localStorage.getItem('followedweixinzuimei');
 	var followedweibozuimei=localStorage.getItem('followedweibozuimei');
 	var followedweibobri=localStorage.getItem('followedweibobri');
 	
-	if(followedweixinzuimei==1){
+	if(followedweixinzuimei==2){
 	$('#followed-weixin-zuimei').parent().hide();
 	}
-	if(followedweibozuimei==1){
+	if(followedweibozuimei==2){
 	$('#followed-weibo-zuimei').parent().hide();
 	}
-	if(followedweibobri==1){
+	if(followedweibobri==2){
 	$('#followed-weibo-bri').parent().hide();
 	}
 	// account list 
 	$('.account-manage').click(function(){
-		$('.manage-list').toggle();
+		$('.manage-list').toggle(100);
 	})
 	// unfold tags
+
+	var tag2=$('.tag2');
+	var triangle=$('.triangle-down');
+
 	$('#tag-unfold').click(function(){
-		$('.tag2').toggle();
-	})
+
+			if(tag2.is(':visible')){
+					tag2.hide(100);
+					triangle.removeClass('orange-border');
+			}
+			else{
+					tag2.show(100);
+					triangle.addClass('orange-border');
+       			}
+	 });
+
+
+	
 </script>
+
 </body>
-
-
-
 
 </html>

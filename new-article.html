@@ -12,9 +12,8 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 	.button-archive,
-	.button-publish,
-	.button-upload-icon{
-		background-color: #B8B8B8;
+	.button-publish{
+		background-color: #27B80C;
 		border: 0;
 		width: 80px;
 		text-align: center;
@@ -23,12 +22,20 @@
 		font-size: 14px;
 		cursor: pointer;
 		float: left;
-		margin-right: 20px;
 	}
-	.button-publish{
+
+	.button-archive {
+		position: absolute;
+		right: 110px;
+		top: 20px;
+	}
+	.button-publish {
+		position: absolute;
+		right: 25px;
+		top: 20px;
 		background-color: #ffad01;
-		margin-right: 0;
 	}
+
 	.upload-icon{
 		display: block;
 		background-color: #e7e7e7;
@@ -48,7 +55,7 @@
 	}
 	#new-article-title{
 		width: 600px;
-		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	.plate-list-item{
 		display: block;
@@ -56,44 +63,140 @@
 		float: left;
 		padding:10px 50px;
 		margin-right: 5px;
-		border-bottom:1px solid white;
+		border-bottom:2px solid white;
+	}
+	.active{
+		border-bottom-color:#F6F6F4;
 	}
 	.deactive-plate-list-item{
 		border-bottom-color: #F6F6F4;
 	}
 	.iphone-app,
-	.android-app{
+	.android-app,
+	#iphone-nav,
+	#android-nav{
+		cursor: pointer;
 		display: none;
 	}
-
+	input[type="text"]{
+		height: 10px;
+		width: 400px;
+	}
+	input[type="file"]{
+		border:0;
+		font-size: 12px;
+		color: #868686;
+		padding:0;
+		margin:0;
+	}
+	input.small-input{
+		width: 42px;
+		height: 10px;
+		text-align: right;
+	}
+	input.cata{
+		margin-right: 5px;
+	}
+	.cata-item{
+		margin-right: 10px;
+		font-size: 12px;
+	}
+	.cata-box{
+		width: 700px;
+	}
+	h5{
+		margin-bottom: 5px;
+	}
+	.add-tag{
+		background-color: #f7f7f7;
+		padding:5px 10px;
+		font-size: 12px;
+		color: #000;
+		-webkit-transition: .2s;
+		-moz-transition: .2s;
+		-ms-transition: .2s;
+		-o-transition: .2s;
+		transition: .2s;
+	}
+	.add-tag:hover{
+		background-color: #efefef;
+	}
+	.add-tag:active{
+		color: #fff;
+			}
+	.back-to-top {
+		display: block;
+		width: 59px;
+		height: 59px;
+		background: url('img/back_to_top_normal.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		bottom: 20px;
+		right: 20px;
+		}
+	section{
+	margin-bottom:20px;
+	}
+	/*to cover the absolute property of button-archive */
+	.fixed{
+	position: fixed;
+	z-index: 1000;
+	right: 273px;
+	top: 0px;
+	}
 </style>
 </head>
 
 
 
 <body>
-	
-<header id="site-header">
-		<div class="container">
+	<header id="site-header">
+		<div class="container visible">
 			<a href="index.html" class="logo">
 				<img src="img/titlebar_logo.png" alt="">
 			</a>
-			<a class="site-address">ZuimeiA.com</a>
-			<nav>
-				<ul id="nav">
-					<li><a href="index.html" class="nav-item">iPhone</a></li>
-					<li><a href="android.html" class="nav-item">Android</a></li>
+			<div>
+				<nav>
+					<ul id="nav">
+						<li><a href="#" class="nav-item active-nav-item">iPhone</a></li>
+						<li><a href="android.html" class="nav-item">Android</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			<div class="tag-container">
+				<ul class="tag1" id="tag1">
+					<li><a href="#" class="active-tag">全部</a></li>
+					<li><a href="#">教育</a></li>
+					<li><a href="#">图书</a></li>
+					<li><a href="#">工具</a></li>
+					<li><a href="#">效率</a></li>
+					<li><a href="#">艺术</a></li>
+					<li><a href="#">儿童</a></li>
+					<li><a href="#" class="last">视频</a></li>
+					<li id="tag-unfold"><span class="triangle-down"></span></li>
 				</ul>
-			</nav>
 
+
+				<ul class="tag2" id="tag2">
+					<li><a href="#">财务</a></li>
+					<li><a href="#">参考</a></li>
+					<li><a href="#">导航</a></li>
+					<li><a href="#">娱乐</a></li>
+					<li><a href="#">旅行</a></li>
+					<li><a href="#">生活</a></li>
+					<li><a href="#">体育</a></li>
+					<li><a href="#">天气</a></li>
+					
+				</ul>
+			</div>
+			</div>
 			<div class="account">
 				<a href="#" class="account-manage">
-					<img src="img/titlebar_personal_normal.png" alt="">
+					<img src="img/titlebar_personal.png" alt="">
 				</a>
 					<div class="manage-list">
 						<span class="triangle-up"></span>
 						<ul>
-							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布文章</a></li>
 							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布专题</a></li>
 							<li><a href="article-manage.html" id="article-manage" class="manage-list-item">文章管理</a></li>
 							<li><a href="user-manage.html" id="user-manage" class="manage-list-item">用户管理</a></li>
@@ -101,112 +204,248 @@
 						</ul>
 					</div>
 			</div>
+
 			<form action="" class="search">
-				<input type="search" value="搜索最美应用" class="default-search">
+				<input type="search" placeholder="搜索最美应用" class="default-search">
 				<a class="search-icon"></a>
 			</form>
 		</div>
 	</header>
 
+
 	<div class="container">
-		<div class="left-side">
 			<div class="content-card">
 				<div>
 					<h4 class="pull-left">撰写新文章</h4>
-					<div class="pull-right">	
+					<div class="actions">	
 						<button class="button-archive">存草稿</button>
 						<button class="button-publish">发布</button>
 					</div>
 				</div>
+				<div class="clear"></div>
 				<hr>	
+
+
 				<fieldset>
+
 				<form action="index.html">
+					<div>
+						<label><h5>文章标题</h5></label>
+						<input type="text" id="new-article-title">
+						</div>
 					<div>
 						<label><h5>选择发布平台</h5></label>
 						<div class="plate-checkbox-list">
-							<input type="checkbox" name="plate" value="iPhone" id="iphone-checkbox"><span class="checkbox">iPhone</span>
-							<input type="checkbox" name="plate" value="Android" id="android-checkbox"><span class="checkbox">Android</span>
+							<input type="checkbox" name="plate" value="iPhone" id="iphone"><span class="checkbox">iPhone</span>
+							<input type="checkbox" name="plate" value="Android" id="android"><span class="checkbox">Android</span>
 						</div>
+						
 					</div>
 			</div>
-				<ul class="plate-list">
-					<li><a href="#" class="plate-list-item" id="iphone-nav">iPhone</a></li>
-					<li><a href="#" class="plate-list-item" id="android-nav">Android</a></li>
+				<ul class="plate-list top1">
+					<li><a class="plate-list-item" id="iphone-nav">iPhone</a></li>
+					<li><a class="plate-list-item" id="android-nav">Android</a></li>
 				</ul>
+
 			<div class="clear content-card iphone-app">
-					<div>
+				
+					<section class="bottom2">
 						<label><a class="upload-icon">icon</a></label>
-						<button class="button-upload-icon">上传图标</button>
-					</div>
+						<div class="button-upload-icon">
+						<input type="file">
+						</div>
+					</section>
+
+					<section>
+						<input type="checkbox" name="paidapp" id="paidapp"><span class="checkbox">收费应用</span>
+						
+						<input type="text" class="small-input"><span class="text-left right3">版本</span>
+
+						<input type="text" class="small-input"><span class="text-left">MB</span>
+					</section>
+
+					<section>
+						<label><h5>下载地址</h5></label>
+						<input type="text" value="http://">
+					</section>
+
+					<section class="cata-box">
+						<label><h5>分类</h5></label>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">教育</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">生活</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">体育</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">娱乐</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">游戏</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">健康</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+					</section>
+					
+
+					<section>
+					<label><h5>标签</h5></label>
+					<input type="text">
+					<span class="add-tag">添加</span>
+					<p>
+					<input type="checkbox" name="tag" class="cata"><span class="cata-item">天气</span>
+					<input type="checkbox" name="tag" class="cata"><span class="cata-item">To-do</span>
+					</p>
+					
+					</section>
+
+					<hr>
+					<section>
+						<label><h5>副标题</h5></label>
+						<input type="text" id="new-article-title">
+					</section>
+
+					<section>
+						<label><h5>应用简介</h5></label>
+						<textarea name="summery" id="summery" cols="90" rows="5">
+							
+						</textarea>
+					</section>
+					
+					<section>
+						<label><h5>感谢作者</h5></label>
+						<textarea name="" id="" cols="90" rows="2"></textarea>
+					</section>
+
+					<section>
+						<label><h5>上传封面</h5></label>
+						 <input type="file" name="upload-cover" id="appcover" onchange="preview()" />
+					</section>
+
+					<section>
+						<label><h5>正文</h5></label>
+						<textarea name="summery" id="summery" cols="90" rows="30">
+							
+						</textarea>
+					</section>
+
+					<section>
+						<div class="pull-right">
+							<a class="back-to-top" href="#top">
+							</a>
+						</div>
+					</section>
 
 					<div>
-						<input type="text" id="new-article-title" value="文章标题">
+						
 					</div>
 
-					<div>
-						<textarea name="comment" id="" cols="80" rows="6">摘要，120字以内</textarea>
-					</div>
 
-					<div>
-						<textarea name="comment" id="" cols="80" rows="6">其他内容（选填）</textarea>
-					</div>
-
-					<div>
-						<label><h5>撰写文章内容</h5></label>
-					</div>
-					<div>
-						<textarea name="comment" id="" cols="80" rows="6"></textarea>
-					</div>
 			</div>
 			
 			<div class="clear content-card android-app">
-					<div>
+					<section class="bottom2">
 						<label><a class="upload-icon">icon</a></label>
-						<button class="button-upload-icon">上传图标</button>
-					</div>
+						<div class="button-upload-icon">
+						<input type="file">
+						</div>
+					</section>
 
-					<div>
-						<input type="text" id="new-article-title" value="文章标题">
-					</div>
+					<section>
+						<input type="checkbox" name="paidapp" id="paidapp"><span class="checkbox">收费应用</span>
+						
+						<input type="text" class="small-input"><span class="text-left right3">版本</span>
 
-					<div>
-						<textarea name="comment" id="" cols="80" rows="6">摘要，120字以内</textarea>
-					</div>
+						<input type="text" class="small-input"><span class="text-left">MB</span>
+					</section>
 
-					<div>
-						<textarea name="comment" id="" cols="80" rows="6">其他内容（选填）</textarea>
-					</div>
+					<section>
+						<label><h5>下载地址</h5></label>
+						<input type="text" value="http://">
+					</section>
 
-					<div>
-						<label><h5>撰写文章内容</h5></label>
-					</div>
-					<div>
-						<textarea name="comment" id="" cols="80" rows="6"></textarea>
-					</div>
+					<section class="cata-box">
+						<label><h5>分类</h5></label>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">教育</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">生活</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">体育</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">娱乐</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">游戏</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">健康</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+					</section>
+					
 
-				
+					<section>
+					<label><h5>标签</h5></label>
+					<input type="text">
+					<span class="add-tag">添加</span>
+					<p>
+					<input type="checkbox" name="tag" class="cata"><span class="cata-item">天气</span>
+					<input type="checkbox" name="tag" class="cata"><span class="cata-item">To-do</span>
+					</p>
+					
+					</section>
+
+					<hr>
+					<section>
+						<label><h5>副标题</h5></label>
+						<input type="text" id="new-article-title">
+					</section>
+
+					<section>
+						<label><h5>应用简介</h5></label>
+						<textarea name="summery" id="summery" cols="90" rows="5">
+							
+						</textarea>
+					</section>
+					
+					<section>
+						<label><h5>感谢作者</h5></label>
+						<textarea name="" id="" cols="90" rows="2"></textarea>
+					</section>
+
+					<section>
+						<label><h5>上传封面</h5></label>
+						 <input type="file" name="upload-cover" id="appcover" onchange="preview()" />
+					</section>
+
+					<section>
+						<label><h5>正文</h5></label>
+						<textarea name="summery" id="summery" cols="90" rows="30">
+							
+						</textarea>
+					</section>
+
+					<section>
+						
+						<div class="pull-right">
+							<a class="back-to-top" href="#top">
+							</a>
+						</div>
+					</section>
+	
 			</div>
-
-			</div>
-			<div class="right-side">
 				
-				<div class="side-card">
-					<h4>下载地址</h4>
-					<img src="" alt="">
-					<button class="button-upload-icon">上传二维码</button>
-					<input type="text" value="应用下载地址">
-				</div>
-
-				<div class="side-card">
-					<h4>下载地址</h4>
-					<input type="text"><button class="button-upload-icon">添加</button>
-				</div>
+				
 
 
 
 				</form>
 			</fieldset>
-		</div>
 	</div>
 
 <script src="js/jquery-1.9.1.min.js"></script>
@@ -221,26 +460,68 @@
 
 			// account list 
 			$('.account-manage').click(function(){
-				$('.manage-list').toggle();
+				$('.manage-list').toggle(100);
 			})
+
+			// write App article area
+
 			var iphonenav=$('#iphone-nav');
 			var androidnav=$('#android-nav');
 			var iphoneapp=$('.iphone-app');
 			var androidapp=$('.android-app');
-			// write article area
-			$('#iphone-checkbox').on('click',function(){
-					iphonenav.toggle();
-					iphoneapp.toggle();
-			}) 
-			$('#android-checkbox').on('click',function(){
-					androidnav.toggle();
-					androidapp.toggle();
-			})
-			$('#android-nav').click(function(){
 
+			$('input[name="plate"]').on('click',function(){
+				var niphone=$( "input#iphone:checked" ).length;
+				if(niphone){
+					iphonenav.show();
+					iphoneapp.show();
+				}else{
+					iphonenav.hide();
+					iphoneapp.hide();
+				}
+				var nandroid=$( "input#android:checked" ).length;
+					if(nandroid){
+						androidnav.removeClass('active');
+						androidnav.show();
+						androidapp.show();
+					}else{
+						androidnav.hide();
+						androidapp.hide();
+					}
+				if(niphone&&nandroid){
+						androidapp.hide();
+						androidnav.addClass('active');
+				}
+			}) 
+			
+			androidnav.click(function(){
+					androidnav.removeClass('active');
+					iphonenav.addClass('active');
+					iphoneapp.hide();
+					androidapp.show();
 			})
+			iphonenav.click(function(){
+					androidapp.hide();
+					iphoneapp.show();
+					androidnav.addClass('active');
+					iphonenav.removeClass('active');
+			})
+
 			
 		})
+			var button=$('.button-archive');
+			var buttonTop=button.offset().top;
+
+			$(window).scroll(function(){
+				var bodyTop=document.documentElement.scrollTop || document.body.scrollTop;
+				if(bodyTop>buttonTop){
+					button.addClass('fixed');
+				}else{
+					button.removeClass('fixed');
+				}
+				
+
+			})
 			</script>
 
 

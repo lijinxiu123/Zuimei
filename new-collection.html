@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>最美应用-首页</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" href="favicon.ico" type="image/-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	
+	.button-archive,
+	.button-publish{
+		background-color: #27B80C;
+		border: 0;
+		width: 80px;
+		text-align: center;
+		padding:8px 0;
+		color: #fff;
+		font-size: 14px;
+		cursor: pointer;
+		float: left;
+		margin-right: 20px;
+	}
+	.button-archive {
+		position: absolute;
+		right: 110px;
+		top: 20px;
+	}
+	.button-publish {
+		position: absolute;
+		right: 25px;
+		top: 20px;
+		background-color: #ffad01;
+	}
+	.upload-icon{
+		display: block;
+		background-color: #e7e7e7;
+		width: 60px;
+		height: 60px;
+		border-radius: 8px;
+		border: none;
+		text-align: center;
+		line-height: 60px;
+		cursor: pointer;
+		float: left;
+	}
+	.button-upload-icon{
+		float: left;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	#new-article-title{
+		width: 600px;
+		margin-bottom: 20px;
+	}
+	.plate-list-item{
+		display: block;
+		background-color: white;
+		float: left;
+		padding:10px 50px;
+		margin-right: 5px;
+		border-bottom:2px solid white;
+	}
+	.active{
+		border-bottom-color:#F6F6F4;
+	}
+	.deactive-plate-list-item{
+		border-bottom-color: #F6F6F4;
+	}
+	.iphone-app,
+	.android-app,
+	#iphone-nav,
+	#android-nav{
+		cursor: pointer;
+		display: none;
+	}
+	input[type="text"]{
+		height: 10px;
+		width: 400px;
+	}
+	input[type="file"]{
+		border:0;
+		font-size: 12px;
+		color: #868686;
+		padding:0;
+		margin:0;
+	}
+	input.small-input{
+		width: 42px;
+		height: 10px;
+		text-align: right;
+	}
+	input.cata{
+		margin-right: 5px;
+	}
+	.cata-item{
+		margin-right: 10px;
+		font-size: 12px;
+	}
+	.cata-box{
+		width: 700px;
+	}
+	h5{
+		margin-bottom: 5px;
+	}
+	.add-tag{
+		background-color: #f7f7f7;
+		padding:5px 10px;
+		font-size: 12px;
+		color: #000;
+		-webkit-transition: .2s;
+		-moz-transition: .2s;
+		-ms-transition: .2s;
+		-o-transition: .2s;
+		transition: .2s;
+	}
+	.add-tag:hover{
+		background-color: #efefef;
+	}
+	.add-tag:active{
+		color: #fff;
+			}
+	.back-to-top {
+		display: block;
+		width: 59px;
+		height: 59px;
+		background: url('img/back_to_top_normal.png');
+		background-repeat: no-repeat;
+		background-size: contain;
+		bottom: 34px;
+		right: 30px;
+		}
+	
+	section{
+		margin-bottom:20px;
+	}
+	.fixed{
+	position: fixed;
+	z-index: 1000;
+	right: 273px;
+	top: 0px;
+	}
+</style>
+</head>
+
+
+<body>
+	<header id="site-header">
+		<div class="container visible">
+			<a href="index.html" class="logo">
+				<img src="img/titlebar_logo.png" alt="">
+			</a>
+			<div>
+				<nav>
+					<ul id="nav">
+						<li><a href="#" class="nav-item active-nav-item">iPhone</a></li>
+						<li><a href="android.html" class="nav-item">Android</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			<div class="tag-container">
+				<ul class="tag1" id="tag1">
+					<li><a href="#" class="active-tag">全部</a></li>
+					<li><a href="#">教育</a></li>
+					<li><a href="#">图书</a></li>
+					<li><a href="#">工具</a></li>
+					<li><a href="#">效率</a></li>
+					<li><a href="#">艺术</a></li>
+					<li><a href="#">儿童</a></li>
+					<li><a href="#" class="last">视频</a></li>
+					<li id="tag-unfold"><span class="triangle-down"></span></li>
+				</ul>
+
+
+				<ul class="tag2" id="tag2">
+					<li><a href="#">财务</a></li>
+					<li><a href="#">参考</a></li>
+					<li><a href="#">导航</a></li>
+					<li><a href="#">娱乐</a></li>
+					<li><a href="#">旅行</a></li>
+					<li><a href="#">生活</a></li>
+					<li><a href="#">体育</a></li>
+					<li><a href="#">天气</a></li>
+					
+				</ul>
+			</div>
+			</div>
+			<div class="account">
+				<a href="#" class="account-manage">
+					<img src="img/titlebar_personal.png" alt="">
+				</a>
+					<div class="manage-list">
+						<span class="triangle-up"></span>
+						<ul>
+							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布专题</a></li>
+							<li><a href="article-manage.html" id="article-manage" class="manage-list-item">文章管理</a></li>
+							<li><a href="user-manage.html" id="user-manage" class="manage-list-item">用户管理</a></li>
+							<li><a href="" id="logout" class="manage-list-item">退出登录</a></li>
+						</ul>
+					</div>
+			</div>
+
+			<form action="" class="search">
+				<input type="search" placeholder="搜索最美应用" class="default-search">
+				<a class="search-icon"></a>
+			</form>
+		</div>
+	</header>
+
+	<div class="container">
+			<div class="content-card">
+				<div>
+					<h4 class="pull-left">撰写新合集</h4>
+					<div class="actions">	
+						<button class="button-archive">存草稿</button>
+						<button class="button-publish">发布</button>
+					</div>
+				</div>
+				<div class="clear"></div>	
+
+				<hr>
+
+				<fieldset>
+
+				<form action="index.html">
+					<div>
+						<label><h5>文章标题</h5></label>
+						<input type="text" id="new-article-title">
+						</div>
+					<div>
+						<label><h5>选择发布平台</h5></label>
+						<div class="plate-checkbox-list">
+							<input type="checkbox" name="plate" value="iPhone" id="iphone"><span class="checkbox">iPhone</span>
+							<input type="checkbox" name="plate" value="Android" id="android"><span class="checkbox">Android</span>
+						</div>
+						
+					</div>
+			</div>
+				<ul class="plate-list top1">
+					<li><a class="plate-list-item" id="iphone-nav">iPhone</a></li>
+					<li><a class="plate-list-item" id="android-nav">Android</a></li>
+				</ul>
+
+			<section class="clear content-card iphone-app">
+				
+					<section class="cata-box">
+						<label><h5>分类</h5></label>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">教育</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">生活</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">体育</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">娱乐</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">游戏</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">健康</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+					</section>
+					
+
+					<section>
+						<label><h5>标签</h5></label>
+						<input type="text">
+						<span class="add-tag">添加</span>
+						<p class="tag-area">
+						<input type="checkbox" name="tag" class="cata"><span class="cata-item">天气</span>
+						<input type="checkbox" name="tag" class="cata"><span class="cata-item">To-do</span>
+						</p>
+					
+					</section>
+
+					<hr>
+					<section class="top2">
+						<label><h5>副标题</h5></label>
+						<input type="text" id="new-article-title">
+					</section>
+
+					<section>
+
+						<label><h5>应用简介</h5></label>
+						<textarea name="summery" id="summery" cols="90" rows="5"></textarea>
+
+					</section>
+					
+					<section>
+						<label><h5>感谢作者</h5></label>
+						<textarea name="" id="" cols="90" rows="2"></textarea>
+					</section>
+
+					<section>
+						<label><h5>上传封面</h5></label>
+						 <input type="file" name="upload-cover" id="appcover" onchange="preview()" />
+					</section>
+
+					<section>
+						<label><h5>正文</h5></label>
+						<textarea name="summery" id="summery" cols="90" rows="30"></textarea>
+					</section>
+
+					<section>
+						<div class="pull-right">
+							<a class="back-to-top" href="#top">
+							</a>
+						</div>
+					</section>
+
+
+			</section>
+			
+					
+			<section class="clear content-card android-app">
+				
+					<section class="cata-box">
+						<label><h5>分类</h5></label>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">教育</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">生活</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">体育</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">娱乐</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">游戏</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">健康</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+						<input type="checkbox" name="catalogue" class="cata"><span class="cata-item">社交</span>
+					</section>
+					
+
+					<section>
+						<label><h5>标签</h5></label>
+						<input type="text">
+						<span class="add-tag">添加</span>
+						<p class="tag-area">
+						<input type="checkbox" name="tag" class="cata"><span class="cata-item">天气</span>
+						<input type="checkbox" name="tag" class="cata"><span class="cata-item">To-do</span>
+						</p>
+					
+					</section>
+
+					<hr>
+					<section class="top2">
+						<label><h5>副标题</h5></label>
+						<input type="text" id="new-article-title">
+					</section>
+
+					<section>
+
+						<label><h5>应用简介</h5></label>
+						<textarea name="summery" id="summery" cols="90" rows="5"></textarea>
+
+					</section>
+					
+					<section>
+						<label><h5>感谢作者</h5></label>
+						<textarea name="" id="" cols="90" rows="2"></textarea>
+					</section>
+
+					<section>
+						<label><h5>上传封面</h5></label>
+						 <input type="file" name="upload-cover" id="appcover" onchange="preview()" />
+					</section>
+
+					<section>
+						<label><h5>正文</h5></label>
+						<textarea name="summery" id="summery" cols="90" rows="30"></textarea>
+					</section>
+
+					<section>
+						
+						<div class="pull-right">
+							<a class="back-to-top" href="#top">
+							</a>
+						</div>
+					</section>
+
+
+			</section>
+			
+				
+				
+
+
+
+				</form>
+			</fieldset>
+	</div>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+	<script>
+		$('document').ready(function(){
+			var editarea=$('.edit-area');
+			$('.manage-user-list-wrapper li').mouseover(function(){
+				$(this).find(editarea).show();
+			}).mouseout(function(){
+				$('.edit-area').hide();
+			})
+
+			// account list 
+			$('.account-manage').click(function(){
+				$('.manage-list').toggle(100);
+			})
+
+			// write App article area
+
+			var iphonenav=$('#iphone-nav');
+			var androidnav=$('#android-nav');
+			var iphoneapp=$('.iphone-app');
+			var androidapp=$('.android-app');
+
+			$('input[name="plate"]').on('click',function(){
+				var niphone=$( "input#iphone:checked" ).length;
+				if(niphone){
+					iphonenav.show();
+					iphoneapp.show();
+				}else{
+					iphonenav.hide();
+					iphoneapp.hide();
+				}
+				var nandroid=$( "input#android:checked" ).length;
+					if(nandroid){
+						androidnav.removeClass('active');
+						androidnav.show();
+						androidapp.show();
+					}else{
+						androidnav.hide();
+						androidapp.hide();
+					}
+				if(niphone&&nandroid){
+						androidapp.hide();
+						androidnav.addClass('active');
+				}
+			}) 
+			
+			androidnav.click(function(){
+					androidnav.removeClass('active');
+					iphonenav.addClass('active');
+					iphoneapp.hide();
+					androidapp.show();
+			})
+			iphonenav.click(function(){
+					androidapp.hide();
+					iphoneapp.show();
+					androidnav.addClass('active');
+					iphonenav.removeClass('active');
+			})
+
+			
+			
+		})
+			var button=$('.button-archive');
+			var buttonTop=button.offset().top;
+
+			$(window).scroll(function(){
+				var bodyTop=document.documentElement.scrollTop || document.body.scrollTop;
+				if(bodyTop>buttonTop){
+					button.addClass('fixed');
+				}else{
+					button.removeClass('fixed');
+				}
+				
+
+			})
+			</script>
+
+
+</body>
+
+</html>

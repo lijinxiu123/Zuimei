@@ -11,31 +11,175 @@
 <link href="css/normalize.css" rel="stylesheet" type="text/css" />
 <link href="css/base.css" rel="stylesheet" type="text/css" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
+
 <style type="text/css">
+.app-title{
+	padding-top: 10px;
+}
+.app-qr{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.download-button{
+	overflow: hidden;
+	float: left;
+	margin: 30px 0px 0px 20px;
+	text-align: center;
+}
+
+
+.app-store,
+.zhihu-talk,
+.google-play,
+.windows,
+.webapp{
+	display: block;
+	background-image:url('img/icons-set.png');
+	background-repeat: no-repeat;
+	background-size: 26px 150px;
+	color: white;
+	padding-left:38px;
+	padding-top: 5px;
+	padding-right: 13px;
+	line-height: 23px;
+	width: 70px;
+	height: 30px;
+	opacity: 1;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+
+.app-store:hover,
+.zhihu-talk:hover,
+.google-play:hover,
+.windows:hover,
+.webapp:hover{
+	opacity: 0.9;
+	text-decoration: none;
+	}
+.app-store{
+	background-position: 8px 0px;
+	background-color:#76797c;
+}
+
+.google-play{
+	background-position: 12px -30px;
+	background-color:#5acccf;
+	padding-left:42px;
+}
+
+.zhihu-talk{
+	background-position: 14px -60px;
+	background-color:#39afd7;
+	padding-left: 47px;
+}
+.windows{
+	background-position: 14px -87px;
+	background-color:#68217a;
+	padding-left: 47px;
+}
+.webapp{
+	background-position: 14px -119px;
+	background-color:#e64b29;
+	padding-left: 47px;
+}
+.more-downloads{
+	font-size: 12px;
+	padding-top: 20px;
+}
+#more-download-address{
+	display: none;
+}
+
+.rotate-quote-mark {
+position: absolute;
+bottom: 0px;
+right: 0px;
+}
+span.mute{
+	font-size: 12px;
+}
+.tag-title,
+.present-plate,
+.other-plate{
+	font-size: 12px;
+	color:#888;
+}
+.other-plate{
+	padding-left: 20px;
+}
+.price{
+	position: absolute;
+	right: 0;
+	top:10px;
+	background-color: #67bb32;
+	width: 40px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	cursor: default;
+	font-size: 12px;
+}
+.more-pic{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 </style>
+
 </head>
 <body>
 	<header id="site-header">
-		<div class="container">
+		<div class="container visible">
 			<a href="index.html" class="logo">
 				<img src="img/titlebar_logo.png" alt="">
 			</a>
-			<a class="site-address">ZuimeiA.com</a>
-			<nav>
-				<ul id="nav">
-					<li><a href="index.html" class="nav-item active-nav-item">iPhone</a></li>
-					<li><a href="android.html" class="nav-item">Android</a></li>
+			<div>
+				<nav>
+					<ul id="nav">
+						<li><a class="nav-item active-nav-item">iPhone</a></li>
+						<li><a href="android.html" class="nav-item">Android</a></li>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+			<div class="tag-container">
+				<ul class="tag1" id="tag1">
+					<li><a href="#" class="active-tag">全部</a></li>
+					<li><a href="#">教育</a></li>
+					<li><a href="#">图书</a></li>
+					<li><a href="#">工具</a></li>
+					<li><a href="#">效率</a></li>
+					<li><a href="#">艺术</a></li>
+					<li><a href="#">儿童</a></li>
+					<li><a href="#" class="last">视频</a></li>
+					<li id="tag-unfold"><span class="triangle-down"></span></li>
 				</ul>
-			</nav>
 
+
+				<ul class="tag2" id="tag2">
+					<li><a href="#">财务</a></li>
+					<li><a href="#">参考</a></li>
+					<li><a href="#">导航</a></li>
+					<li><a href="#">娱乐</a></li>
+					<li><a href="#">旅行</a></li>
+					<li><a href="#">生活</a></li>
+					<li><a href="#">体育</a></li>
+					<li><a href="#">天气</a></li>
+					
+				</ul>
+			</div>
+			</div>
 			<div class="account">
 				<a href="#" class="account-manage">
-					<img src="img/titlebar_personal_normal.png" alt="">
+					<img src="img/titlebar_personal.png" alt="">
 				</a>
-					<div class="manage-list" style="display:none">
+					<div class="manage-list">
 						<span class="triangle-up"></span>
 						<ul>
-							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布文章</a></li>
 							<li><a href="new-article.html" id="new-article" class="manage-list-item">发布专题</a></li>
 							<li><a href="article-manage.html" id="article-manage" class="manage-list-item">文章管理</a></li>
 							<li><a href="user-manage.html" id="user-manage" class="manage-list-item">用户管理</a></li>
@@ -43,51 +187,17 @@
 						</ul>
 					</div>
 			</div>
+
 			<form action="" class="search">
-				<input type="search" value="搜索最美应用">
+				<input type="search" placeholder="搜索最美应用" class="default-search">
+				<a class="search-icon"></a>
 			</form>
 		</div>
 	</header>
 
 	<div class="container">
 	<div class="left-side">
-		<header>
-		<div class="tag-card">
-			<ul class="tag1" id="tag1">
-				<li><a href="#" class="active-tag">全部</a></li>
-				<li><a href="#">教育</a></li>
-				<li><a href="#">图书</a></li>
-				<li><a href="#">工具</a></li>
-				<li><a href="#">效率</a></li>
-				<li><a href="#">艺术</a></li>
-				<li><a href="#">儿童</a></li>
-				<li><a href="#" class="last">视频</a></li>
-				<li id="tag-unfold"><span class="triangle-down"></span></li>
-			</ul>
-
-			<ul class="tag2" id="tag2">
-				<li><a href="#">财务</a></li>
-				<li><a href="#">参考</a></li>
-				<li><a href="#">导航</a></li>
-				<li><a href="#">娱乐</a></li>
-				<li><a href="#">旅行</a></li>
-				<li><a href="#">生活</a></li>
-				<li><a href="#">体育</a></li>
-				<li><a href="#">天气</a></li>
-				<li><a href="#">新闻</a></li>
-				<li><a href="#">医疗</a></li>
-				<li><a href="#">音乐</a></li>
-				<li><a href="#">游戏</a></li>
-				<li><a href="#">社交</a></li>
-				<li><a href="#">商业</a></li>
-				<li><a href="#">美食佳饮</a></li>
-				<li><a href="#">商品指南</a></li>
-				<li><a href="#">报刊杂志</a></li>
-				<li><a href="#">健康健美</a></li>
-				<li><a href="#">摄影与录像</a></li>
-			</ul>
-		</div>
-		</header>	
+	
 	<article>
 			<section>
 				<div class="content-card">
@@ -101,66 +211,108 @@
 							<span class="mute pull-right">2013-06-06 14:00</span>
 						</div>
 					</div>
-					<p>这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间……</p>
+					<p>每天都有很多有趣的、有用的、有内涵的信息交织在我们的生活中，需要进行及时有效的梳理记录。鉴于印象笔记对于大多数用户来讲功能过于繁杂，小编在这里推荐一款更加轻巧实用的应用 ，完全可以满足日常的工作生活需要。</p>
 						<span>感谢推荐此款应用的美友：<strong>张明</strong>。</span>
-				</div>
-			</section>
-			<section>
-				<div class="content-card">
+				<hr>
+			
+				
 					<p>
-						这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。
-					</p>
-					<p>
-进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间。上下滑动时不同的颜色变化也很漂亮，白天的时间则是明亮的彩色渐变，晚上的时间则偏暗。设定好时间后向左或者向右滑动，闹钟就生效了。</p>
-					<p>
-						另外，闹钟还可以设定不同的铃声，你也可以把你喜欢的音乐通过 iTunes 设定为铃声。
+						Catch Notes 有几个亮点：
+
+1、界面简洁大方，用简单的色块表示不同空间，一目了然。
 					</p>
 					
+					<p>
+						<img src="img/img-loading.png" data-original="img/app-img/1.png"  class="article-page-img" alt="">			
+						<img src="img/img-loading.png" data-original="img/app-img/1.png"  class="article-page-img" alt="">			
+							
+					</p>
+					<p>另抽屉式的打开方式，让分组的概念更加清晰。</p>
+					
 					<div class="bottom2">
-						<img src="img/app-img/rise2.jpg"  class="article-page-img" alt="">			
-						<img src="img/app-img/rise3.jpg"  class="article-page-img" alt="">		
+						<img src="img/img-loading.png" data-original="img/app-img/2.png"  class="article-page-img" alt="">			
+							
 					</div>
-					<p>另外，闹钟还可以设定不同的铃声，你也可以把你喜欢的音乐通过 iTunes 设定为铃声。</p>
+					<p>
+						2、提供六种记录方式，提醒，照片，to-do list，录音，便签，手写（需要安装Catch Sketch），并且提供定位服务。将用户需求考虑满满~
+					</p>
 
-					<div id="fold-area">
+					<div class="bottom2">
+						<img src="img/img-loading.png" data-original="img/app-img/3.png"  class="article-page-img" alt="">			
+							
+					</div>
+					<p>列出本周的工作清单，获得明确目标。</p>
+					<div class="bottom2">
+						<img src="img/img-loading.png" data-original="img/app-img/4.png"  class="article-page-img" alt="">			
+							
+					</div>
+					<p>可以直接使用 # 在正文的任何地方添加标签，方便自己查询和归类。
+
+这是小编在很多笔记类应用中没有见到的~
+
+					</p>
+						<div class="bottom2">
+						<img src="img/img-loading.png" data-original="img/app-img/5.png"  class="article-page-img" alt="">			
+							
+					</div>
+					<div class="bottom2">
+						<img src="img/img-loading.png" data-original="img/app-img/6.png"  class="article-page-img" alt="">			
+							
+					</div>
+					<p>除了“我的想法”是私人空间以外，其他的空间都可以与他人共享，在合作中共同进步。</p>
+					<div class="bottom2">
+						<img src="img/img-loading.png" data-original="img/app-img/7.png"  class="article-page-img" alt="">			
+							
+					</div>
+					<p>提供星标，标签，联系人三种搜索方式，还可以任意组合，让查询变得高效。</p>
+					<div class="bottom2">
+						<img src="img/img-loading.png" data-original="img/app-img/8.png"  class="article-page-img" alt="">			
+							
+					</div>
+					<p>3、拥有 Android ，iOS，Web 三个平台，方便用户时刻同步；这个功能也许是最实用的了，可以满足几乎每个人对的平台要求。
+
+					最后，需要告诉大家免费版是有限制的：最多能添加5个用户空间，每月上传流量上限70MB，不过对于不用太多照片的用户来讲肯定是够用了。
+					</p>
+					<!-- <div id="fold-area">
 						<p>
 						这是一款遵循极简主义的起床闹钟，它拥有极简的视觉风格和极简的操作方式。
 					</p>
 					<p>
-进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间。上下滑动时不同的颜色变化也很漂亮，白天的时间则是明亮的彩色渐变，晚上的时间则偏暗。设定好时间后向左或者向右滑动，闹钟就生效了。</p>
+					进入到主界面里，上下滑动即可以设置闹钟时间，它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时，点击时则以5分钟为单位变化，便于调整时间。上下滑动时不同的颜色变化也很漂亮，白天的时间则是明亮的彩色渐变，晚上的时间则偏暗。设定好时间后向左或者向右滑动，闹钟就生效了。
+					</p>
 					<p>
 						另外，闹钟还可以设定不同的铃声，你也可以把你喜欢的音乐通过 iTunes 设定为铃声。
 					</p>
 					
 					<div class="bottom2">
-						<img src="img/app-img/rise2.jpg"  class="article-page-img" alt="">			
-						<img src="img/app-img/rise3.jpg"  class="article-page-img" alt="">		
+						<img src="img/img-loading.png" data-original="img/app-img/rise2.jpg"  class="article-page-img" alt="">			
+						<img src="img/img-loading.png" data-original="img/app-img/rise3.jpg"  class="article-page-img" alt="">		
 					</div>
 					<p>另外，闹钟还可以设定不同的铃声，你也可以把你喜欢的音乐通过 iTunes 设定为铃声。</p>
-					</div>
+					</div> -->
 
 
 
-					<div class="unfold auto">
+					<!-- <div class="unfold auto">
 						<a id="unfold-content"><span id="fold-words">展开全部</span><span class="unfold-triangle-down"></span></a>
-					</div>
+					</div> -->
 				</div>
 			</section>
 			
-			<section>
+			<section class="more-pic">
 				
 				<div class="content-card">
 					<h4>更多高清截图</h4>
 					<div>
-						<img src="img/app-img/rise.jpg" alt="" class="big-app-img">
-						<img src="img/app-img/rise2.jpg" alt="" class="big-app-img">
-						<img src="img/app-img/rise3.jpg" alt="" class="big-app-img">
-						<img src="img/app-img/rise4.jpg" alt="" class="big-app-img">
+						<a rel="more_pic" href="img/app-img/rise.jpg"><img src="img/img-loading.png" data-original="img/app-img/rise.jpg" alt="" class="big-app-img"></a>
+						<a rel="more_pic" href="img/app-img/rise2.jpg"><img src="img/img-loading.png" data-original="img/app-img/rise2.jpg" alt="" class="big-app-img"></a>
+						<a rel="more_pic" href="img/app-img/rise3.jpg"><img src="img/img-loading.png" data-original="img/app-img/rise3.jpg" alt="" class="big-app-img"></a>
+						<a rel="more_pic" href="img/app-img/rise4.jpg"><img src="img/img-loading.png" data-original="img/app-img/rise4.jpg" alt="" class="big-app-img"></a>
 					</div>
 				</div>
 			</section>
 
-			<section>
+			<section class="quote-card">
 				<div class="content-card">
 					<p><strong>姜奎 </strong> 设计师：</p>
 					<p>
@@ -168,18 +320,23 @@
 						<span class="quote-text">它不像一般闹钟那样要精确到每分钟，滑动时以15分钟为一个单位，很容易快速的定时点击时则以5分钟为单位变化，便于调整时间……</span>
 						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
 					</p>
-					<a href="#" class="editable">编辑</a>
-				</div>
-			</section>
-
-			<section>
-				<div class="content-card">
+					<!-- <div href="#" class="do-edit">
+						<a href="#" class="edit-quote">编辑</a>
+						<a href="#" class="add-to-index">置顶</a>
+					</div>
+ -->			
+			<hr>
+				
 					<p><strong>姜奎 </strong> 设计师：</p>
 					<p>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon">
+						<img src="img/img-loading.png" data-original="img/quotation_mark.png" alt="" class="quote-icon">
 						<span class="quote-text">1、注册时，填好姓名、邮箱、密码之后，就让我“登出” ？这是汉化版的 Bug 么，翻译的人中文没学好？我是又出去了一次再进来后，确定没有别的地方可点才点了那个“登出”按钮，居然登录了~~录了~~了~~ <br/>2、之前用 Bamboo note 的时候配合 Stylus 的体验就很爽，这个涂鸦式的清新纸条体验，一下就让我回到那个高中的男生一个晚自习给我写了4封情书的年代啊~ 3、就是编辑的画框有点小，大一点就好了。</span>
-						<img src="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
+						<img src="img/img-loading.png" data-original="img/quotation_mark.png" alt="" class="quote-icon rotate-quote-mark">
 					</p>
+					<!-- <div href="#" class="do-edit">
+						<a href="#" class="edit-quote">编辑</a>
+						<a href="#" class="add-to-index">置顶</a>
+					</div> -->
 				</div>
 			</section>
 
@@ -187,11 +344,244 @@
 				<a class="back-to-top" href="#top">
 				</a>
 			</footer>
+
 	</article>
 	</div>
+	<div class="right-side">
+		
+		<div class="side-card">
+			<div>
+					<span class="tag-title">标签: </span><a href="#">工具</a>、<a href="#">天气</a><br>
 
+					<span class="present-plate">当前平台: </span><a>iPhone</a>
+					<span class="other-plate">其他平台: </span><a href="">Android</a></span>
+					<div class="price">免费</div>
+			</div>
+			<hr>	
+			<img src="img/app-img/qr.jpg" alt="" class="app-qr">
+			
+			<div class="download-button">
+				<a class="app-store" href="https://itunes.apple.com/us/app/everest-live-your-dreams-achieve/id581016826?ls=1&amp;mt=8">iPhone </a>
+			</div>
+			
+		</div>
+
+		<div id="more-download-address">
+			<div class="side-card">
+				<img src="img/img-loading.png" data-original="img/app-img/qr.jpg" alt="" class="app-qr">
+				
+				<div class="download-button">
+					<a class="app-store" href="https://itunes.apple.com/us/app/everest-live-your-dreams-achieve/id581016826?ls=1&amp;mt=8">iPad </a>
+				</div>
+			</div>
+
+			<div class="side-card">
+				<img src="img/img-loading.png" data-original="img/app-img/qr.jpg" alt="" class="app-qr">
+				
+				<div class="download-button">
+					<a class="app-store" href="https://itunes.apple.com/us/app/everest-live-your-dreams-achieve/id581016826?ls=1&amp;mt=8">iPad </a>
+				</div>
+			</div>
+		</div>
+
+		<div class="side-card center add">
+			<img src="img/zuimei-qr.png" alt="" class="zuimei-qr">
+			<div class="weixin">
+				<h5>关注最美应用微信账号</h5>
+				<p class="no-margin mute weixin-des">发现功能、交互和视觉最美的iPhone和Android应用。</p>
+			</div>
+			<div class="clear">
+				<hr>
+			</div>
+			<a class="followed" id="followed-weixin-zuimei"><b>X</b></a>
+			<div class="weibo-area">
+
+				<iframe width="100%" height="80" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&	width=0&height=550&fansRow=2&ptype=1&speed=0&skin=5&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=3310377062&verifier=85e63399&dpc=1" style="z-index:100"></iframe> 
+				<a class="followed" id="followed-weibo-zuimei"><b>X</b></a>
+			</div>
+			<hr>
+			<div class="weibo-area">
+		
+				<iframe width="100%" height="80" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=1&isTitle=0&noborder=0&isWeibo=0&isFans=0&uid=2705358091&verifier=0f81d6c8&dpc=1" style="z-index:100"></iframe> 
+				<a class="followed" id="followed-weibo-bri"><b>X</b></a>
+			</div>
+		</div>
+		<div class="side-card">
+			<h5>热门</h5>
+			
+			<ul class="top1 hot">
+				<li>
+					<div class="hot-app-icon">
+							<a href="page.html"><img src="img/app-icon/icon-rise.jpg" alt=""></a>
+						</div>
+					<a href="page.html" class="hot-app">
+
+					<h2>Rise</h2>
+					<h3>听听你周边的人在听什么</h3>
+					</a>
+				</li>
+				<li>
+										<div class="hot-app-icon">
+							<a href="page.html"><img src="img/app-icon/icon-path.jpg" alt=""></a>
+						</div>
+					<a href="page.html" class="hot-app">
+					<h2>Path</h2>
+					<h3>听听你周边的人在听什么</h3>
+					</a>
+				</li>
+				<li>
+										<div class="hot-app-icon">
+							<a href="page.html"><img src="img/app-icon/icon-camper.jpg" alt=""></a>
+						</div>
+					<a href="page.html" class="hot-app">
+					<h2>Camper</h2>
+					<h3>听听你周边的人在听什么</h3>
+					</a>
+				</li>
+				<li>
+										<div class="hot-app-icon">
+							<a href="page.html"><img src="img/app-icon/icon-line.jpg" alt=""></a>
+						</div>
+					<a href="page.html" class="hot-app">
+					<h2>Line</h2>
+					<h3>听听你周边的人在听什么人在听什么</h3>
+					</a>
+				</li>
+				<li>
+										<div class="hot-app-icon">
+							<a href="page.html"><img src="img/app-icon/icon-everest.jpg" alt=""></a>
+						</div>
+					<a href="page.html" class="hot-app">
+					<h2>Everest</h2>
+					<h3>每个人都可以成为“造梦者”</h3>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		</div>
+
+		</div>
+
+  <!-- footer -->
+
+  
+
+  <footer class="footer">
+  
+  
+  <div class="container">
+    
+    
+    <div class="navbar">
+      
+      
+      
+      
+      
+      
+      
+      
+        <ul class="nav bottom-nav">
+                
+                
+                <li><a href="index.html">iPhone</a></li>
+                
+                
+                <li><a href="android.html">Android</a></li>
+                
+                
+                <li><a href="htpp://brixd.com/about.html">关于我们</a></li>
+                
+                
+              
+              
+                
+                
+                <li><a href="http://share.brixd.com">体验之美</a></li>
+                
+        </ul>
+      
+      
+      <ul class="nav bottom-nav contact-info">
+        
+        
+        <li><a href="http://weibo.com/brixd" class="weibo"> weibo.com/brixd</a></li>
+        
+        
+      </ul>
+      
+      
+      
+      
+      
+    </div>
+    
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <div class="container">
+    
+    
+    <hr class="footer">
+    
+    
+    <div class="contact bottom1 top2">
+      
+      
+      <h4 class="gray">北京总部</h4>
+      
+      
+      <ul class="address">
+        
+        
+        <li>北京市海淀区中关村大街27号中关村大厦603-605</li>
+        
+        
+        <li>邮编：100080</li>
+        
+        
+        <li>联系电话：010-53616906</li>
+        
+        
+        <li>商务邮箱：<a href="mailto:service@brixd.com" class="service-mail">service@brixd.com</a> </li>
+        
+        
+      </ul>
+       <div class="copyright">
+              
+              
+              <p>&copy;2013 Bri Experience Design & Development.<br>
+              京ICP备11031713号 京公网备案11010802009073</p>
+              
+              
+            </div>
+      
+    </div>
+    
+    
+            
+            
+            
+            
+            
+          </div>
+          
+          
+        </footer>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/jquery.lazyload.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+
 <script>
 $(document).ready(function(){
 	// lazyLoad
@@ -200,39 +590,64 @@ $(document).ready(function(){
 	});
 	// account list 
 	$('.account-manage').click(function(){
-		$('.manage-list').toggle();
+		$('.manage-list').toggle(100);
 	});
 	// unfold tags
+
+	var tag2=$('.tag2');
+
+	var triangle=$('.triangle-down');
+
 	$('#tag-unfold').click(function(){
-		$('.tag2').toggle();
-	});
+
+			if(tag2.is(':visible')){
+					tag2.hide(100);
+					triangle.removeClass('orange-border');
+			}
+			else{
+					tag2.show(100);
+					triangle.addClass('orange-border');
+       		}
+	 });
 	
 	// set and get the localstorage value to judge if Weixin,weibo should appear
 	$('.followed>b').click(function(){
 		$(this).parent().parent().hide();
 	});
 	$('#followed-weixin-zuimei>b').click(function(){
-		localStorage.setItem('followedweixinzuimei','1');
+		localStorage.setItem('followedweixinzuimei','2');
 	});
 	$('#followed-weibo-bri>b').click(function(){
-		localStorage.setItem('followedweibobri','1');
+		localStorage.setItem('followedweibobri','2');
 	}); 
 	$('#followed-weibo-zuimei>b').click(function(){
-		localStorage.setItem('followedweibozuimei','1');
+		localStorage.setItem('followedweibozuimei','2');
 	}); 
 		//fold content
 	
-	$('#unfold-content').click(function(){
-			$('#fold-area').toggle(function(){
-				if($(this).is(':visible')){
-          		 	$('#fold-words').html("收起内容")
-				}
-       			else{
-           			$("#fold-words").html("展开全部")
-       			}
+	// $('#unfold-content').click(function(){
+	// 		$('#fold-area').toggle(function(){
+	// 			if($(this).is(':visible')){
+ //          		 	$('#fold-words').html("收起内容")
+	// 			}
+ //       			else{
+ //           			$("#fold-words").html("展开全部")
+ //       			}
+	// 		});
+	// 		$('.unfold-triangle-down').toggleClass('unfold-rotate');
+	// }) 
+	// 
+	
+
+
+	// Fancybox
+
+			$("a[rel=more_pic]").fancybox({
+				
+				
+				'nextEffect'  :'fade'
+				
 			});
-			$('.unfold-triangle-down').toggleClass('unfold-rotate');
-	}) 
 		
 });
 			
@@ -241,16 +656,41 @@ $(document).ready(function(){
 	var followedweibozuimei=localStorage.getItem('followedweibozuimei');
 	var followedweibobri=localStorage.getItem('followedweibobri');
 	
-	if(followedweixinzuimei==1){
+	if(followedweixinzuimei==2){
 	$('#followed-weixin-zuimei').parent().hide();
 	};
-	if(followedweibozuimei==1){
+	if(followedweibozuimei==2){
 	$('#followed-weibo-zuimei').parent().hide();
 	};
-	if(followedweibobri==1){
+	if(followedweibobri==2){
 	$('#followed-weibo-bri').parent().hide();
 	};
 
+	var doedit=$('.do-edit');
+			$('.quote-card').mouseover(function(){
+				$(this).find(doedit).show();
+			}).mouseout(function(){
+				doedit.hide();
+	})
+
+	var moredownloads=$('#more-download-address');
+	var more=$('.more-downloads');
+	more.click(function(){
+
+			if(moredownloads.is(':visible')){
+					moredownloads.hide();
+					more.removeClass('orange');
+			}
+			else{
+					moredownloads.show();
+					more.addClass('orange');
+       			}
+
+
+      
+	 });
+
+	
 
 </script>
 </body>

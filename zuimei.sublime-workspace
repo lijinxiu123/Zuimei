@@ -1,0 +1,1447 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"button",
+				"buttonTop"
+			],
+			[
+				"body",
+				"bodyScrollTop"
+			],
+			[
+				"more",
+				"more-pic"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"tag",
+				"tag-title"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"add",
+				"add-icon"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"quote",
+				"quote-area"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"f",
+				"ffb400"
+			],
+			[
+				"error",
+				"error_plate"
+			],
+			[
+				"err",
+				"error_plate"
+			],
+			[
+				"ero",
+				"error_plate"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"arti",
+				"article-img"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"app",
+				"app-qr"
+			],
+			[
+				"ro",
+				"rotate"
+			],
+			[
+				"android",
+				"androidnav"
+			],
+			[
+				"iphone",
+				"iphonecheckbox"
+			],
+			[
+				"inpt",
+				"inputiphonenav"
+			],
+			[
+				"side",
+				"side-card"
+			],
+			[
+				"do",
+				"do-edit"
+			],
+			[
+				"hot",
+				"hot-app-icon"
+			],
+			[
+				"and",
+				"android-nav"
+			],
+			[
+				"de",
+				"default-search"
+			],
+			[
+				"adroid",
+				"android-app"
+			],
+			[
+				"pla",
+				"plate-list-item"
+			],
+			[
+				"plat",
+				"plate-list"
+			],
+			[
+				"fold",
+				"fold-words"
+			],
+			[
+				"unfo",
+				"unfold-content"
+			],
+			[
+				"new",
+				"new-article-title"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ind",
+				"z-index"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"edit",
+				"edit-area"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"mana",
+				"manage-list-header"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"radio",
+				"radio-list"
+			],
+			[
+				"to",
+				"toggle"
+			],
+			[
+				"follow",
+				"follow-weixin-zuimei"
+			],
+			[
+				"fol",
+				"follow-weixin-zuimei"
+			],
+			[
+				"foll",
+				"followed"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"content",
+				"content-card"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"acount",
+				"account-list"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"re",
+				"remember"
+			],
+			[
+				"input",
+				"input-field"
+			],
+			[
+				"form",
+				"form-title"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"first",
+				"first-img"
+			],
+			[
+				"fist",
+				"first-article-img"
+			],
+			[
+				"job",
+				"job-title"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"mask",
+				"mask-title"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"o",
+				"orange-text2"
+			],
+			[
+				"ux",
+				"ux-pic"
+			],
+			[
+				"bri",
+				"bri-ex"
+			],
+			[
+				"ux-",
+				"ux-service"
+			],
+			[
+				"UX",
+				"UXButton"
+			],
+			[
+				"icon",
+				"icon1"
+			],
+			[
+				"down",
+				"down-icon2"
+			],
+			[
+				"service",
+				"service-link"
+			],
+			[
+				"l",
+				"load"
+			],
+			[
+				"Mob",
+				"Mobile-solution-button"
+			],
+			[
+				"bl",
+				"block-title"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "page.html",
+			"settings":
+			{
+				"buffer_size": 17516,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "android.html",
+			"settings":
+			{
+				"buffer_size": 14136,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "android-page.html",
+			"settings":
+			{
+				"buffer_size": 17643,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "new-article.html",
+			"settings":
+			{
+				"buffer_size": 14482,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "new-collection.html",
+			"settings":
+			{
+				"buffer_size": 13302,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "suggest-app.html",
+			"settings":
+			{
+				"buffer_size": 3978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "user-manage.html",
+			"settings":
+			{
+				"buffer_size": 8627,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "login.html",
+			"settings":
+			{
+				"buffer_size": 2107,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "add-user.html",
+			"settings":
+			{
+				"buffer_size": 4666,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "article-manage.html",
+			"settings":
+			{
+				"buffer_size": 7988,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 14001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/JinxiuLee/Desktop/test",
+			"settings":
+			{
+				"buffer_size": 14001,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/base.css",
+			"settings":
+			{
+				"buffer_size": 1974,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/normalize.css",
+			"settings":
+			{
+				"buffer_size": 7828,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 11655,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/Preview In Google Chrome.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"cpi",
+				"Emmet: Select Previous Item"
+			],
+			[
+				"aline",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"defa",
+				"Preferences: Settings - Default"
+			],
+			[
+				"document",
+				"Set Syntax: Rd (R Documentation)"
+			],
+			[
+				"emmet",
+				"Emmet: Rename Tag"
+			],
+			[
+				"eemt",
+				"Emmet: Rename Tag"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"remoc",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/JinxiuLee/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/JinxiuLee/Github/Zuimei2/index.html",
+		"/Users/JinxiuLee/Github/New Nice App/new-article.html",
+		"/Users/JinxiuLee/Github/Zuimei2/new-article.html",
+		"/Users/JinxiuLee/Desktop/test.html",
+		"/Users/JinxiuLee/Github/Zuimei2/android.html",
+		"/Users/JinxiuLee/Github/Zuimei2/test2.html",
+		"/Users/JinxiuLee/Github/Zuimei2/test.html",
+		"/Users/JinxiuLee/Github/Zuimei2/service-mobile.html",
+		"/Users/JinxiuLee/Github/Zuimei2/page.html",
+		"/Users/JinxiuLee/Github/New Nice App/css/style.css",
+		"/Users/JinxiuLee/Github/New Nice App/css/base.css",
+		"/Users/JinxiuLee/Github/New Nice App/css/normalize.css",
+		"/Users/JinxiuLee/Github/New Nice App/css/style2.css",
+		"/Users/JinxiuLee/Github/New Nice App/add-user.html",
+		"/Users/JinxiuLee/Github/New Nice App/android.html",
+		"/Users/JinxiuLee/Github/New Nice App/article-manage.html",
+		"/Users/JinxiuLee/Github/New Nice App/user-manage.html",
+		"/Users/JinxiuLee/Github/New Nice App/suggest-app.html",
+		"/Users/JinxiuLee/Github/New Nice App/page.html",
+		"/Users/JinxiuLee/Github/New Nice App/login.html",
+		"/Users/JinxiuLee/Github/New Nice App/index.html",
+		"/Users/JinxiuLee/Github/Zuimei2/suggest-app.html",
+		"/Users/JinxiuLee/Github/New Nice App/css/style2.html",
+		"/Users/JinxiuLee/Github/Zuimei2/add-user.html",
+		"/Users/JinxiuLee/Github/Zuimei2/android-page.html",
+		"/Users/JinxiuLee/Github/Zuimei2/article-manage.html",
+		"/Users/JinxiuLee/Github/Zuimei2/login.html",
+		"/Users/JinxiuLee/Github/Zuimei2/new-collection.html",
+		"/Users/JinxiuLee/Github/Zuimei2/user-manage.html",
+		"/Users/JinxiuLee/Github/Zuimei2/css/normalize.css",
+		"/Users/JinxiuLee/Github/Zuimei2/css/base.css",
+		"/Users/JinxiuLee/Github/Zuimei2/css/style.css",
+		"/Users/JinxiuLee/Desktop/Working/Bootstrap/bootstrap/css/bootstrap-responsive.css",
+		"/Users/JinxiuLee/Desktop/1.css",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/Amway/android.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/Amway/iphone.html",
+		"/Users/JinxiuLee/Desktop/a.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/service-mobile3.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/service-mobile2.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/service.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/service-mobile.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/index-mobile.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/about-mobile.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/about.html",
+		"/Users/JinxiuLee/Github/Zuimei/css/style.css",
+		"/Users/JinxiuLee/Github/Zuimei2/js/jquery-1.9.1.min.js",
+		"/Users/JinxiuLee/Github/Zuimei/css/normalize.css",
+		"/Users/JinxiuLee/Github/Zuimei/css/base.css",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/css/web.css",
+		"/Users/JinxiuLee/Github/Zuimei副本/css/style.css",
+		"/Users/JinxiuLee/Github/Zuimei副本/index.html",
+		"/Users/JinxiuLee/Github/Zuimei副本/css/index.css",
+		"/Users/JinxiuLee/Github/Zuimei副本/css/base.css",
+		"/Users/JinxiuLee/Github/Zuimei副本/css/normalize.css",
+		"/Users/JinxiuLee/Desktop/Finished work/Bri website/old-website/css/bootstrap.css",
+		"/Users/JinxiuLee/Desktop/i.html",
+		"/Users/JinxiuLee/Github/Zuimei/js/jquery.lazyload.js",
+		"/Users/JinxiuLee/Github/Zuimei/login.html",
+		"/Users/JinxiuLee/Desktop/Working/最美应用/adaptive path.html",
+		"/Users/JinxiuLee/Github/Zuimei/suggest-app.html",
+		"/Users/JinxiuLee/Github/Zuimei/add-user.html",
+		"/Users/JinxiuLee/Github/Zuimei/page.html",
+		"/Users/JinxiuLee/Github/Zuimei/user-manage.html",
+		"/Users/JinxiuLee/Github/Zuimei/article-manage.html",
+		"/Users/JinxiuLee/Github/Zuimei/new-article.html",
+		"/Users/JinxiuLee/Github/Zuimei/android.html",
+		"/Users/JinxiuLee/Github/Zuimei/index.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/index-web.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/index.html",
+		"/Users/JinxiuLee/Github/Zuimei/article-management.html",
+		"/Users/JinxiuLee/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/JinxiuLee/Github/Zuimei/test.html",
+		"/Users/JinxiuLee/Github/briweb/service-mobile3.html",
+		"/Users/JinxiuLee/Github/briweb/service.html",
+		"/Users/JinxiuLee/Github/briweb/index-mobile.html",
+		"/Users/JinxiuLee/Github/Zuimei/css/index.css",
+		"/Users/JinxiuLee/Github/weikan/website/Weikan/page.html",
+		"/Users/JinxiuLee/Github/weikan/website/Weikan/content.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/weikan/website/Weikan/index.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/weikan/website/Weikan/css/style.css",
+		"/Users/JinxiuLee/Library/Application Support/Sublime Text 2/Packages/User/YUI_Compressor.sublime-build",
+		"/Users/JinxiuLee/SavedApp/goagent/local/addto-startup.py",
+		"/Users/JinxiuLee/Github/briweb/css/ie8.css",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/css/bootstrap3.css",
+		"/Users/JinxiuLee/Github/Amway Android/Download.txt",
+		"/Users/JinxiuLee/Github/Amway/android.html",
+		"/Users/JinxiuLee/Github/Amway/iphone.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/tracking.js",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/index.html",
+		"/Users/JinxiuLee/Github/android.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/Amway Android/iphone.html",
+		"/Users/JinxiuLee/Desktop/Working/安利微刊/website/index.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Github/briweb/css/mobile.css",
+		"/Users/JinxiuLee/Desktop/Bri website/website/service-mobile2.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/service-mobile.html",
+		"/Users/JinxiuLee/Github/briweb/about-mobile.html",
+		"/Users/JinxiuLee/Github/briweb/about.html",
+		"/Users/JinxiuLee/Github/briweb/index.html",
+		"/Users/JinxiuLee/Github/briweb/index-web.html",
+		"/Users/JinxiuLee/Github/briweb/service-mobile.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/css/bootstrap3.css",
+		"/Users/JinxiuLee/Desktop/Bri website/website/css/web.css",
+		"/Users/JinxiuLee/Desktop/Bri website/website/service-mobile3.html",
+		"/Users/JinxiuLee/Desktop/Working/安利微刊/website/css/style.css",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Desktop/Bri website/website/index.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/index-web.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/service.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/about.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/css/mobile.css",
+		"/Users/JinxiuLee/Desktop/Bri website/website beta/service.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website beta/index.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website beta/about.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/about-mobile.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/index-mobile.html",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Desktop/Bri website/website/about.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/css/normal.css",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Desktop/Bri website/website beta/index-web.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website副本/index-web.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website副本/index.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website beta/index-web.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/css/pic-slider.css",
+		"/Users/JinxiuLee/Desktop/Bri website/website beta/css/pic-slider.css",
+		"/Users/JinxiuLee/Desktop/Bri website/website/未命名文件夹/service-mobile2.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/未命名文件夹/service-mobile3.html",
+		"/Users/JinxiuLee/Desktop/Bri website/website/css/bootstrap.css",
+		"/Volumes/Macintosh HD/Users/JinxiuLee/Desktop/Bri website/website beta/css/bootstrap.css",
+		"/Users/JinxiuLee/Desktop/Bri website/website beta/index-mobile.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<li>",
+			"qr.jpg",
+			"value=\"搜索最美应用\"",
+			"search",
+			"cols=\"100\"",
+			"90",
+			"z-inde",
+			"存草稿",
+			"cols=\"100\"",
+			"actions",
+			"button-archive",
+			"iphone-nav",
+			"(isIE6) ?",
+			"h4",
+			"plate-list",
+			"5",
+			"clear",
+			"4",
+			"weixin",
+			"2",
+			"followed",
+			"发布应用",
+			"免费",
+			"page.html",
+			"rise2",
+			"fancy",
+			"more_pic",
+			"example_group",
+			"rel=\"more_pic\" ",
+			"more-pic",
+			"more",
+			"qr.jpg",
+			"more-downloads",
+			"更多",
+			"quote",
+			"高清",
+			"src=\"img/",
+			"1.png",
+			"src=\"img/app-img/rise.jpg",
+			"weibo",
+			"iphone",
+			"price",
+			"iphone",
+			"标签",
+			"side-card",
+			"a{",
+			"mute",
+			"1",
+			"'1'",
+			"footer",
+			".price",
+			"add-icon",
+			"发布",
+			"quote-area",
+			"quote",
+			"detail-icon",
+			"#333",
+			"333",
+			"top1",
+			"top",
+			"div",
+			"slider",
+			"right",
+			"h3",
+			"followed",
+			"2px 4px",
+			"copyright",
+			"weibo",
+			"2",
+			"6",
+			"<div class=\"qr\">\n						<img data-original=\"img/zuimei-qr.png\" src-=\"img/img-loading.png\" class=\"app-qr-img \" alt=\"\">\n						<a href=\"#\" class=\"download-apple\">App Store 下载</a>\n						</div>",
+			"<div class=\"qr\">\n						<img src=\"img/zuimei-qr.png\" class=\"app-qr-img not-lazy\" alt=\"\">\n						<a href=\"#\" class=\"download-apple\">App Store 下载</a>\n						</div>",
+			"1",
+			"我来",
+			"<a href=\"page.html\" class=\"more\">阅读全文</a>",
+			"archive",
+			"fix",
+			"fixed",
+			"actions",
+			"					       ",
+			"comment",
+			"text",
+			":)",
+			"h4",
+			"checkbox",
+			"$('#submit')",
+			"side-card",
+			"<span class=\"publish-date\">2013-06-06 14:00</span>",
+			"appdes",
+			"solar",
+			"最美应用-发现和收集那些用户体验最美的应用",
+			"solar",
+			"---设计师 Tom Cat",
+			"---moonmonster",
+			"pic",
+			"content-card p",
+			"最美应用",
+			"qr",
+			"png",
+			"span",
+			"mute",
+			"app",
+			"app ",
+			".app",
+			"excerpt",
+			"function new_excerpt_length",
+			"return",
+			"-",
+			"page.html",
+			"triangle",
+			"more-downloads",
+			"triangle.",
+			"triangle",
+			"orange-border",
+			"tag2",
+			"更多",
+			"download-button",
+			"下载",
+			"新浪微盘",
+			"DesignAndUE",
+			"http://vdisk.weibo.com/s/ALag4",
+			"http://vdisk.weibo.com/s/ANfyb",
+			"MB",
+			"article-page-img",
+			"存",
+			"赵",
+			"p",
+			"app"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"placeholder=\"搜索最美应用\"",
+			"cols=\"90\"",
+			"android-page.html",
+			"",
+			"android-page.html",
+			"name=\"tag\"",
+			"<input type=\"checkbox\" name=\"catalogue\" class=\"cata\">",
+			"<img data-original=\"img/zuimei-qr.png\" src-=\"img/img-loading.png\" class=\"app-qr-img \" alt=\"\">",
+			"<img data-original=\"img/app-img/rise.jpg\" src=\"img/img-loading.png\" alt=\"\">",
+			"",
+			"发布应用",
+			"header-date",
+			"header-plate",
+			"header-username",
+			"header-article-title",
+			"体验之美",
+			"rotate-quote-mark",
+			"",
+			"<a href=\"page.html\"><img src=\"img/app-icon/icon-rise.jpg\" alt=\"\"></a>",
+			"<a href=\"page.html\"><h1 class=\"app-title\">Rise Alarm Clock-极简风格的闹钟</h1></a>",
+			"h5",
+			"<div class=\"edit-area\"><span class=\"edit\"><a href=\"#\">修改</a></span>\n						<span class=\"separator\">|</span>\n						<span class=\"delete\"><a href=\"#\">删除</a></span></div>",
+			"<div class",
+			"<span class=\"delete\"><a href=\"#\">删除</a></span>",
+			"<span class=\"edit\"><a href=\"#\">修改</a></span>",
+			"#585858",
+			"525252",
+			"page.html",
+			"Bri 体验科技",
+			"http://share.brixd.com/",
+			"Bri 体验科技",
+			"class=\"job-des\"",
+			"class=\"job-title\"",
+			"<br/>",
+			"Bri Experience Design & Development",
+			"603-605",
+			"100080",
+			"#FF9900",
+			"normal.css",
+			"FF9900",
+			"<body onload=\"detect()\">",
+			"share.brixd.com",
+			"toggle(\"slow\")",
+			"m_refer",
+			"bottom1",
+			"top1",
+			"",
+			"detail-list-item",
+			"detail-list"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "page.html",
+					"settings":
+					{
+						"buffer_size": 17516,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4214,
+								4214
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2549.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "android.html",
+					"settings":
+					{
+						"buffer_size": 14136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7741,
+								7741
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3839.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "android-page.html",
+					"settings":
+					{
+						"buffer_size": 17643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4337,
+								4337
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2865.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "new-article.html",
+					"settings":
+					{
+						"buffer_size": 14482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								671,
+								671
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 183.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "new-collection.html",
+					"settings":
+					{
+						"buffer_size": 13302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8071,
+								8071
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "suggest-app.html",
+					"settings":
+					{
+						"buffer_size": 3978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2550,
+								2550
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1121.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "user-manage.html",
+					"settings":
+					{
+						"buffer_size": 8627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1235,
+								1235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 433.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "login.html",
+					"settings":
+					{
+						"buffer_size": 2107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								709,
+								709
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "add-user.html",
+					"settings":
+					{
+						"buffer_size": 4666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3667,
+								3667
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1904.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "article-manage.html",
+					"settings":
+					{
+						"buffer_size": 7988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3576,
+								3576
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2218.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 14001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								14001
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5845.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/Users/JinxiuLee/Desktop/test",
+					"settings":
+					{
+						"buffer_size": 14001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12051,
+								12051
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8375.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 12,
+					"file": "css/base.css",
+					"settings":
+					{
+						"buffer_size": 1974,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1843,
+								1843
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "css/normalize.css",
+					"settings":
+					{
+						"buffer_size": 7828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								336,
+								319
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 11655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8341,
+								8291
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8032.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.779157605673,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
